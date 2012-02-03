@@ -1,0 +1,18 @@
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\bin\Debug\home_Speech.exe
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\bin\Debug\home_Speech.pdb
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Form1.resources
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Properties.Resources.resources
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\home_Speech.exe
+D:\Dropbox\itStep\ms_VS_2010\projects\1 myPROJECTS\home_Speech\home_Speech\obj\x86\Debug\home_Speech.pdb
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.exe
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.pdb
+D:\_GLDNBT\home_Speech\home_Speech\bin\Debug\home_Speech.exe
+D:\_GLDNBT\home_Speech\home_Speech\bin\Debug\home_Speech.pdb
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Form1.resources
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Properties.Resources.resources
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.write.1.tlog

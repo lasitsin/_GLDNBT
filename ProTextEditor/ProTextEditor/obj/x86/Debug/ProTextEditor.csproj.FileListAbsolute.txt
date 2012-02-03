@@ -1,0 +1,26 @@
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.exe.config
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.exe
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.pdb
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.About.resources
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.MainWindow.resources
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.Properties.Resources.resources
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.FindForm.resources
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.ProTextEditorForm.resources
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.exe
+G:\Shag\WinForms Уроки\Prog\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.pdb
+D:\_GLDNBT\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.exe.config
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.exe
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.pdb
+D:\_GLDNBT\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.exe
+D:\_GLDNBT\ProTextEditor\ProTextEditor\bin\Debug\ProTextEditor.pdb
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.About.resources
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.MainWindow.resources
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.Properties.Resources.resources
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.FindForm.resources
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.ProTextEditorForm.resources
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.write.1.tlog

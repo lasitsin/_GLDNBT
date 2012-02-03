@@ -1,0 +1,8 @@
+D:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.exe
+D:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.pdb
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Properties.Resources.resources
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.exe
+D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.pdb
