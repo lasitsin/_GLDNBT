@@ -105,7 +105,7 @@ namespace ProTextEditor.TextEditor
 
         private void toolStripComboBox1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(richTextBox1.SelectedText))
+            if (!string.IsNullOrEmpty(richTextBox1.SelectedText) && richTextBox1.SelectionFont!=null)
             {
                 currentFont = richTextBox1.SelectionFont;
                 richTextBox1.SelectionFont=new Font(new FontFamily(toolStripComboBox1.SelectedItem.ToString()),currentFont.Size);
@@ -153,7 +153,7 @@ namespace ProTextEditor.TextEditor
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(richTextBox1.SelectedText))
+            if (!string.IsNullOrEmpty(richTextBox1.SelectedText) && richTextBox1.SelectionFont!=null)
             {
                 currentFont = richTextBox1.SelectionFont;
                 if (currentFont.Style.HasFlag(FontStyle.Bold))
@@ -204,18 +204,29 @@ namespace ProTextEditor.TextEditor
 
         private void richTextBox1_SelectionChanged(object sender, EventArgs e)
         {
-            if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Bold))
-                toolStripButton1.BackColor= Color.Gold;
-            else
-                toolStripButton1.BackColor = defColor;
-            if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Italic))
-                toolStripButton2.BackColor = Color.Gold;
-            else
-                toolStripButton2.BackColor = defColor;
-            if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Underline))
-                toolStripButton3.BackColor = Color.Gold;
-            else
-                toolStripButton3.BackColor = defColor;
+            if (richTextBox1.SelectionFont == null)
+                return;
+            try
+            {
+                if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Bold))
+                    toolStripButton1.BackColor = Color.Gold;
+                else
+                    toolStripButton1.BackColor = defColor;
+                if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Italic))
+                    toolStripButton2.BackColor = Color.Gold;
+                else
+                    toolStripButton2.BackColor = defColor;
+                if (richTextBox1.SelectionFont.Style.HasFlag(FontStyle.Underline))
+                    toolStripButton3.BackColor = Color.Gold;
+                else
+                    toolStripButton3.BackColor = defColor;
+                CheckFont();
+            }
+            catch (NullReferenceException nuExeption)
+            {
+                MessageBox.Show(nuExeption.Message, "Ошибка выделения текста", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+                throw;
+            }
         }
         public int SearchText(string text, int paramSearch, int position)
         {
@@ -239,7 +250,14 @@ namespace ProTextEditor.TextEditor
         {
             (this.ParentForm as MainWindow).SearchText();
         }
-        
+        private void CheckFont()
+        {
+            if (richTextBox1.SelectionFont == null)
+                return;
+            
+            toolStripComboBox1.SelectedItem = richTextBox1.SelectionFont.FontFamily.Name;
+            toolStripComboBox2.SelectedItem = richTextBox1.SelectionFont.Size.ToString();
+        }
         
     }
 }

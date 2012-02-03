@@ -51,10 +51,10 @@
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -138,6 +138,7 @@
             this.saveToolStripButton.Name = "saveToolStripButton";
             this.saveToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.saveToolStripButton.Text = "toolStripButton1";
+            this.saveToolStripButton.ToolTipText = "Сохранить";
             this.saveToolStripButton.Click += new System.EventHandler(this.saveToolStripButton_Click);
             // 
             // toolStripSeparator1
@@ -153,6 +154,7 @@
             this.undoToolStripButton.Name = "undoToolStripButton";
             this.undoToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.undoToolStripButton.Text = "toolStripButton2";
+            this.undoToolStripButton.ToolTipText = "Отменить ";
             this.undoToolStripButton.Click += new System.EventHandler(this.undoToolStripButton_Click);
             // 
             // redoToolStripButton
@@ -163,6 +165,7 @@
             this.redoToolStripButton.Name = "redoToolStripButton";
             this.redoToolStripButton.Size = new System.Drawing.Size(23, 22);
             this.redoToolStripButton.Text = "toolStripButton3";
+            this.redoToolStripButton.ToolTipText = "Повторить";
             this.redoToolStripButton.Click += new System.EventHandler(this.redoToolStripButton_Click);
             // 
             // toolStripSeparator2
@@ -178,6 +181,7 @@
             this.copyToolStripButton1.Name = "copyToolStripButton1";
             this.copyToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.copyToolStripButton1.Text = "toolStripButton1";
+            this.copyToolStripButton1.ToolTipText = "Скопировать";
             this.copyToolStripButton1.Click += new System.EventHandler(this.copyToolStripButton1_Click);
             // 
             // pasteToolStripButton1
@@ -188,6 +192,7 @@
             this.pasteToolStripButton1.Name = "pasteToolStripButton1";
             this.pasteToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.pasteToolStripButton1.Text = "toolStripButton1";
+            this.pasteToolStripButton1.ToolTipText = "Вставить";
             this.pasteToolStripButton1.Click += new System.EventHandler(this.pasteToolStripButton1_Click);
             // 
             // cutToolStripButton1
@@ -198,6 +203,7 @@
             this.cutToolStripButton1.Name = "cutToolStripButton1";
             this.cutToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.cutToolStripButton1.Text = "toolStripButton1";
+            this.cutToolStripButton1.ToolTipText = "Вырезать";
             this.cutToolStripButton1.Click += new System.EventHandler(this.cutToolStripButton1_Click);
             // 
             // selectAllToolStripButton1
@@ -208,6 +214,7 @@
             this.selectAllToolStripButton1.Name = "selectAllToolStripButton1";
             this.selectAllToolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.selectAllToolStripButton1.Text = "toolStripButton1";
+            this.selectAllToolStripButton1.ToolTipText = "Выделить все";
             this.selectAllToolStripButton1.Click += new System.EventHandler(this.selectAllToolStripButton1_Click);
             // 
             // toolStripSeparator3
@@ -222,6 +229,7 @@
             this.toolStripComboBox1.Name = "toolStripComboBox1";
             this.toolStripComboBox1.Size = new System.Drawing.Size(150, 25);
             this.toolStripComboBox1.Sorted = true;
+            this.toolStripComboBox1.ToolTipText = "Шрифт";
             this.toolStripComboBox1.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox1_Click);
             // 
             // toolStripComboBox2
@@ -244,6 +252,7 @@
             "24"});
             this.toolStripComboBox2.Name = "toolStripComboBox2";
             this.toolStripComboBox2.Size = new System.Drawing.Size(75, 25);
+            this.toolStripComboBox2.ToolTipText = "Размер шрифта";
             this.toolStripComboBox2.SelectedIndexChanged += new System.EventHandler(this.toolStripComboBox2_SelectedIndexChanged);
             // 
             // toolStripButton1
@@ -278,28 +287,6 @@
             this.toolStripButton3.Text = "Ч";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 25);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(654, 397);
-            this.panel1.TabIndex = 2;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.richTextBox1.EnableAutoDragDrop = true;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(654, 397);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
-            // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
@@ -313,7 +300,30 @@
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton4.Text = "toolStripButton4";
+            this.toolStripButton4.ToolTipText = "Поиск";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.richTextBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 25);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(654, 397);
+            this.panel1.TabIndex = 2;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.EnableAutoDragDrop = true;
+            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(654, 397);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
+            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // ProTextEditorForm
             // 
