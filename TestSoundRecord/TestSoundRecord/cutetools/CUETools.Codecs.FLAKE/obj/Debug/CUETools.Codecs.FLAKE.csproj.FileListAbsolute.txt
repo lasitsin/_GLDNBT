@@ -1,0 +1,66 @@
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb

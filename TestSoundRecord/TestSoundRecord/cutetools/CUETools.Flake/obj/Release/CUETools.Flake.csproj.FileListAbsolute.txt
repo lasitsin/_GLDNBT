@@ -1,0 +1,12 @@
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Release\CUETools.Flake.exe.config
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Release\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Release\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Release\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Release\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Release\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\bin\Release\CUETools.Flake.exe.config
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\bin\Release\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\bin\Release\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Flake\obj\Release\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Flake\obj\Release\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Flake\obj\Release\CUETools.Flake.pdb

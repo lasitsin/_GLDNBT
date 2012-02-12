@@ -1,0 +1,49 @@
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\CUETools.Codecs.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Codecs.FLAKE.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Codecs.FLAKE.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Codecs.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\GoogleSpeechLib\bin\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\bin\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\bin\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\bin\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\bin\Debug\GoogleSpeechLib.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\bin\Debug\GoogleSpeechLib.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\bin\Debug\GoogleSpeechLib.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+G:\bin\Debug\GoogleSpeechLib.dll
+G:\bin\Debug\GoogleSpeechLib.pdb
+G:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+G:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+G:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+H:\bin\Debug\GoogleSpeechLib.dll
+H:\bin\Debug\GoogleSpeechLib.pdb
+H:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+H:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+H:\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+F:\_GLDNBT\bin\Debug\GoogleSpeechLib.dll
+F:\_GLDNBT\bin\Debug\GoogleSpeechLib.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb

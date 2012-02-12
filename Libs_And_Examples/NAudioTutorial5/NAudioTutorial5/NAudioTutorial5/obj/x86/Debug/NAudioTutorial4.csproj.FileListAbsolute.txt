@@ -1,0 +1,13 @@
+C:\projects\NAudioTutorial4\NAudioTutorial4\bin\x86\Debug\NAudioTutorial4.exe
+C:\projects\NAudioTutorial4\NAudioTutorial4\bin\x86\Debug\NAudioTutorial4.pdb
+C:\projects\NAudioTutorial4\NAudioTutorial4\bin\x86\Debug\NAudio.dll
+C:\projects\NAudioTutorial4\NAudioTutorial4\bin\x86\Debug\NAudio.pdb
+C:\projects\NAudioTutorial4\NAudioTutorial4\bin\x86\Debug\NAudio.xml
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.NAudioTutorial4.resources
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.Properties.Resources.resources
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.csproj.GenerateResource.Cache
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.exe
+C:\projects\NAudioTutorial4\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.pdb
+C:\Projects\NAudioTutorial5\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.exe
+C:\Projects\NAudioTutorial5\NAudioTutorial4\obj\x86\Debug\NAudioTutorial4.pdb

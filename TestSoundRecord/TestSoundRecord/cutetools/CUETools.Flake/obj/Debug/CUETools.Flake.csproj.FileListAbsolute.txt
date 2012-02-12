@@ -1,0 +1,36 @@
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.exe.config
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.exe
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.pdb
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+C:\doc\Projects\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.exe.config
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\bin\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\CUETools.Flake.exe.config
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\CUETools.Flake.exe.config
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\bin\Debug\CUETools.Flake.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\cuetoolsnet\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe.config
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.pdb
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+C:\Documents and Settings\Администратор\Мои документы\Visual Studio 2010\Projects\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe.config
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.pdb

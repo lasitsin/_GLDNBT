@@ -1,0 +1,17 @@
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\MixDiff.exe.config
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\MixDiff.exe
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\MixDiff.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\NAudio.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\NAudio.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\bin\Debug\NAudio.xml
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\NAudio.Utils.AboutForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MarkHeath.AudioUtils.Images.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MarkHeath.AudioUtils.MixDiffForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MarkHeath.AudioUtils.PropertiesForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MarkHeath.AudioUtils.Properties.Resources.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MarkHeath.AudioUtils.SettingsForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\ResGen.read.1.tlog
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\ResGen.write.1.tlog
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MixDiff.exe
+C:\Users\AlexBond\Desktop\NAudio-Source\MixDiff\obj\Debug\MixDiff.pdb
