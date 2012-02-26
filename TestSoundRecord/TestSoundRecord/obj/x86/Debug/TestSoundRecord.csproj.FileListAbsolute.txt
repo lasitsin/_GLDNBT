@@ -1,0 +1,73 @@
+c:\documents and settings\администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\documents and settings\администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Form1.resources
+c:\documents and settings\администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Properties.Resources.resources
+c:\documents and settings\администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\documents and settings\администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.exe
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.exe
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.pdb
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.exe
+C:\Documents and Settings\Администратор\мои документы\visual studio 2010\Projects\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.pdb
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.exe
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.exe
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.dll
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.dll
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.exe
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.dll
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.pdb
+G:\TestSoundRecord\TestSoundRecord\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Form1.resources
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Properties.Resources.resources
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.exe
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.exe
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.dll
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.dll
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.exe
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.dll
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.pdb
+H:\TestSoundRecord\TestSoundRecord\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Form1.resources
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Properties.Resources.resources
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.exe
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.exe
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\TestSoundRecord.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.exe
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.FLAKE.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Codecs.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CUETools.Flake.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\GoogleSpeechLib.pdb
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Form1.resources
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Properties.Resources.resources
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\NAudio.dll

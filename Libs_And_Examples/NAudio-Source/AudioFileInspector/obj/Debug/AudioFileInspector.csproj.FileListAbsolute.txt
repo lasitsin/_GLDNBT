@@ -1,0 +1,17 @@
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\audio_file_inspector.html
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\AudioFileInspector.exe
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\AudioFileInspector.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\NAudio.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\System.ComponentModel.Composition.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\NAudio.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\bin\Debug\NAudio.xml
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\NAudio.Utils.AboutForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.AudioFileInspectorForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.FindForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.OptionsForm.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.Properties.Resources.resources
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\ResGen.read.1.tlog
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\ResGen.write.1.tlog
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.exe
+C:\Users\AlexBond\Desktop\NAudio-Source\AudioFileInspector\obj\Debug\AudioFileInspector.pdb

@@ -1,0 +1,9 @@
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.dll.config
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.pdb
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.xml
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.dll
+C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.pdb

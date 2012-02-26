@@ -1,0 +1,10 @@
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Release\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\bin\Release\CUETools.Codecs.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs\obj\Release\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs\obj\Release\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\cuetoolsnet\CUETools.Codecs\obj\Release\CUETools.Codecs.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\bin\Release\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\bin\Release\CUETools.Codecs.pdb
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Codecs\obj\Release\ResolveAssemblyReference.cache
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Codecs\obj\Release\CUETools.Codecs.dll
+Q:\users\A.Yachnev\My\C#\GoogleSpeech\src\habr\src\cuetoolsnet\CUETools.Codecs\obj\Release\CUETools.Codecs.pdb

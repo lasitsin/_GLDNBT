@@ -1,0 +1,33 @@
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.dll
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.pdb
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.xml
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.NAudioTutorial5.resources
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.Properties.Resources.resources
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.csproj.GenerateResource.Cache
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.dll
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.pdb
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.xml
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.NAudioTutorial5.resources
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.Properties.Resources.resources
+D:\Tutorials\Copy of NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.csproj.GenerateResource.Cache
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.exe
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudioTutorial4.pdb
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.dll
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.pdb
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\bin\x86\Release\NAudio.xml
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.NAudioTutorial5.resources
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial4.Properties.Resources.resources
+D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Release\NAudioTutorial5.csproj.GenerateResource.Cache

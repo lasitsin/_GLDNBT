@@ -6,3 +6,13 @@ D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.exe
 D:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.pdb
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.exe
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.pdb
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Properties.Resources.resources
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.exe
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.pdb
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.exe
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.pdb

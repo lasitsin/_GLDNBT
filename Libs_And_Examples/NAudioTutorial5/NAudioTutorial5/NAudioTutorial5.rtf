@@ -1,0 +1,688 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033
+{\fonttbl
+{\f0\froman\fcharset0\fprq2\fttruetype Times New Roman;}
+{\f1\fmodern\fcharset0\fprq1\fttruetype Courier New;}
+{\f2\froman\fcharset0\fprq2\fttruetype Symbol;}
+{\f3\fswiss\fcharset0\fprq2\fttruetype Arial;}
+{\f4\fswiss\fcharset0\fprq2\ftnil Dingbats;}}
+{\colortbl
+\red0\green0\blue0;
+\red255\green255\blue255;
+\red0\green128\blue0;
+\red43\green145\blue175;
+\red0\green0\blue255;
+\red128\green128\blue128;
+\red163\green21\blue21;}
+{\stylesheet
+{\s1\fi-431\li720\sbasedon29\snext29Contents 1;}
+{\s2\fi-431\li1440\sbasedon29\snext29Contents 2;}
+{\s3\fi-431\li2160\sbasedon29\snext29Contents 3;}
+{\s8\fi-431\li720\sbasedon29Lower Roman List;}
+{\s5\tx431\sbasedon25\snext29Numbered Heading 1;}
+{\s6\tx431\sbasedon26\snext29Numbered Heading 2;}
+{\s7\fi-431\li720Square List;}
+{\*\cs11\sbasedon29Endnote Text;}
+{\s4\fi-431\li2880\sbasedon29\snext29Contents 4;}
+{\s9\fi-431\li720Diamond List;}
+{\s10\fi-431\li720Numbered List;}
+{\*\cs12\fs20\superEndnote Reference;}
+{\s13\fi-431\li720Triangle List;}
+{\s14\tx431\sbasedon27\snext29Numbered Heading 3;}
+{\s15\fi-431\li720Dashed List;}
+{\s16\fi-431\li720\sbasedon10Upper Roman List;}
+{\s17\sb440\sa60\f3\fs24\b\sbasedon29\snext29Heading 4;}
+{\s18\fi-431\li720Heart List;}
+{\s35\fi-431\li720Box List;}
+{\*\cs20\fs20Reference;}
+{\s21\fi-431\li720\sbasedon10Upper Case List;}
+{\s22\fi-431\li720Bullet List;}
+{\s23\fi-431\li720Hand List;}
+{\*\cs24\fs20\sbasedon29Footnote Text;}
+{\s25\sb440\sa60\f3\fs34\b\sbasedon29\snext29Heading 1;}
+{\s26\sb440\sa60\f3\fs28\b\sbasedon29\snext29Heading 2;}
+{\s19\qc\sb240\sa120\f3\fs32\b\sbasedon29\snext29Contents Header;}
+{\s28\fi-431\li720Tick List;}
+{\s27\sb440\sa60\f3\fs24\b\sbasedon29\snext29Heading 3;}
+{\s30\fi-431\li720\sbasedon10Lower Case List;}
+{\s31\li1440\ri1440\sa120\sbasedon29Block Text;}
+{\s37\f1\sbasedon29Plain Text;}
+{\s33\tx1584\sbasedon5\snext29Section Heading;}
+{\s34\fi-431\li720Implies List;}
+{\s29\f0\fs24Normal;}
+{\s36\fi-431\li720Star List;}
+{\*\cs32\fs20\superFootnote Reference;}
+{\s38\tx1584\sbasedon5\snext29Chapter Heading;}}
+{\*\listtable
+{\list\listtemplateid1044\listsimple{\listlevel\levelnfc23\levelstartat0\levelspace0\levelfollow0\fi-431\li720{\leveltext\'01\'b7 ;}{\levelnumbers;}\f2}\listid1000}}
+{\*\listoverridetable
+{\listoverride\listoverridecount0\listid1000\levelnfc23\levelstartat0\levelspace0\levelfollow0\fi-431\li720{\leveltext\'01\'b7 ;}{\levelnumbers;}\f2\ls1}}
+
+\kerning0\cf0\ftnbj\fet2\ftnstart1\ftnnar\aftnnar\ftnstart1\aftnstart1\aenddoc\revprop3{\info\uc1}\deftab720\viewkind1\paperw16837\paperh23811\margl1440\margr1440\widowctrl
+\sectd\sbknone\colsx360\margtsxn566\margbsxn566\marglsxn566\margrsxn566\pgncont\ltrsect
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs36\b\lang1033{\*\listtag0}\abinodiroverride\ltrch NAudio Tutorial 5 - Recording Audio}{\s29\f0\fs36\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs36\b\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Time for another installment of the NAudio Tutorials; this week we will be looking at how to Record Audio using NAudio from two different recording scenarios. The first being the use of NAudio to record any and all sound coming from the local Sound Card input, whether that be from a Microphone, the Line In Device or the Sound Cards on board wave mixer. The second approach we will be looking at is recording only the Audio that has been mixed by NAudio, regardless of what other audio is being played on the system at the time. This is useful for scenarios where you want to play over a backing track, or play your samples against a click track being played from another program but don't want to record the click track. The additional advantage of recording the audio mixed directly from NAudio is that there is 0 degradation in quality through the process; no audio playing means pure silence, rather than almost silence which for your average audio hardware would be the result, there is always some level of noise when working with an analog signal.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This NAudio Recording audio tutorial builds upon the concepts presented in previous NAudio Tutorials, if you haven't yet had the opportunity to review them I suggest that you venture there first and resume reading this tutorial after you have understood the basic NAudio concepts.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://opensebj.blogspot.com/2009/02/introduction-to-using-naudio.html"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://opensebj.blogspot.com/2009/02/introduction-to-using-naudio.html}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://opensebj.blogspot.com/2009/02/naudio-tutorial-2-mixing-multiple-wave.html"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://opensebj.blogspot.com/2009/02/naudio-tutorial-2-mixing-multiple-wave.html}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://opensebj.blogspot.com/2009/03/naudio-tutorial-3-sample-properties.html"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://opensebj.blogspot.com/2009/03/naudio-tutorial-3-sample-properties.html}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://opensebj.blogspot.com/2009/03/naudio-tutorials-minor-note.html"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://opensebj.blogspot.com/2009/03/naudio-tutorials-minor-note.html}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://opensebj.blogspot.com/2009/03/naudio-tutorial-4-sample-reversing.html"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://opensebj.blogspot.com/2009/03/naudio-tutorial-4-sample-reversing.html}}}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Time for another disclaimer, the second approach discussed here, recording the mix directly from NAudio has been suggested as a feature for inclusion in the main branch. I'm not sure if it fits in to the long term direction for the WaveMixerStream32 class, in any case, the code for these modifications have been included in this Tutorial and thanks to the Open Source nature of NAudio you can make these same changes to an instance of the library for yourself. You can find the specific details of this suggest contained in this forum post:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://naudio.codeplex.com/Thread/View.aspx?ThreadId=52296"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch http://naudio.codeplex.com/Thread/View.aspx?ThreadId=52296}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch If you have any feedback on this tutorial, drop me a line or post a question in the comments section below.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://www.evolvingsoftware.com/blogfiles/NAudioTutorial5.zip"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Download the full article (AbiWord and RTF Format), example C#.Net Source Code and tutorial program here.}}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs32\lang1033{\*\listtag0}\abinodiroverride\ltrch Recoding from the Sound Card}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch This is remarkably simple to achieve in NAudio, short of having a big red button which we push before it leaves the factory. First step is to setup.. ah forget the steps here is the code:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\cf2\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch // WaveIn Streams for recording}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf3\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch WaveIn}{\s29\f1\fs20\lang0{\*\listtag0} waveInStream;}{\s29\cf3\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf3\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch WaveFileWriter}{\s29\f1\fs20\lang0{\*\listtag0} writer;}{\s29\cf3\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f1\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}new}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf3\f1\fs20\lang0{\*\listtag0}WaveIn}{\s29\f1\fs20\lang0{\*\listtag0}(44100,2);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch writer = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}new}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf3\f1\fs20\lang0{\*\listtag0}WaveFileWriter}{\s29\f1\fs20\lang0{\*\listtag0}(outputFilename, waveInStream.WaveFormat);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream.DataAvailable += }{\s29\cf4\f1\fs20\lang0{\*\listtag0}new}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf3\f1\fs20\lang0{\*\listtag0}EventHandler}{\s29\f1\fs20\lang0{\*\listtag0}<}{\s29\cf3\f1\fs20\lang0{\*\listtag0}WaveInEventArgs}{\s29\f1\fs20\lang0{\*\listtag0}>(waveInStream_DataAvailable);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream.StartRecording();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch No joke that's almost it. The only interesting thing here that we need to consider it that we have added an EventHandler that needs to be setup to handle data when it's ready to be handed off to the WaveFileWriter:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch void}{\s29\f1\fs20\lang0{\*\listtag0} waveInStream_DataAvailable(}{\s29\cf4\f1\fs20\lang0{\*\listtag0}object}{\s29\f1\fs20\lang0{\*\listtag0} sender, }{\s29\cf3\f1\fs20\lang0{\*\listtag0}WaveInEventArgs}{\s29\f1\fs20\lang0{\*\listtag0} e)}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     writer.WriteData(e.Buffer, 0, e.BytesRecorded);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Er, thats it to start recording. We can stop the recording as such:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream.StopRecording();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream.Dispose();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch waveInStream = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}null}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch writer.Close();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch writer = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}null}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch See it would have been to simple a tutorial if we stopped here but feel free to stop reading and give it a crack. Using this method any audio which isn't muted on you input mixer will be recorded; it's up to you and the windows Mixer API to decide what you want to record, isn't that nice; except that you can't only record Audio from your audio application if there are other applications playing sounds in the background - say you get a call on your VOIP connection right in the middle of the hottest composition ever, or some one PM's you in IRC, or you click around on your PC looking for that cool new sample to load, with all the button clicks and other useless sounds being saved in to your mixed composition - oh no. Lets now look at how this unfortunate situation can be avoided.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs32\lang1033{\*\listtag0}\abinodiroverride\ltrch Direct-To-Disk recoding via the NAudio WaveMixerStream32 Class}{\s29\f0\fs32\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Now this is slightly more complicated but much more fun and presents you with a superior audio recording (especially on lousy or average audio hard ware, say my PC for instance). We will cover the code which will be required within the calling application first and then secondly review the changes required within the NAudio library, just so we have some comparison in amount of effort required for both approaches.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch mixer.StreamMixToDisk(outputFilename);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch mixer.StartStreamingToDisk();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Assuming you already have the mixer defined, thats all that is required to start recording. We can pause the streaming to disk by:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch mixer.PauseStreamingToDisk();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Or resume by:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch mixer.ResumeStreamingToDisk();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Finally stopping by:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch mixer.StopStreamingToDisk();}{\s29\f1\fs20\lang1033{\*\listtag0}\line }{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Easy enough but we should cover whats required for this to actually work right? So lets dive in to the modifications in the WaveMixerStream32.cs file and hack till our hearts are content. In the declaration section of the class we need to add the following:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf2\f0\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch // Declarations to support the streamToDisk recording methodology}{\s29\cf2\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f0\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch private}{\s29\f0\fs20\lang0{\*\listtag0} }{\s29\cf4\f0\fs20\lang0{\*\listtag0}bool}{\s29\f0\fs20\lang0{\*\listtag0} streamToDisk;}{\s29\cf4\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f0\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch private}{\s29\f0\fs20\lang0{\*\listtag0} }{\s29\cf4\f0\fs20\lang0{\*\listtag0}string}{\s29\f0\fs20\lang0{\*\listtag0} streamToDiskFileName;}{\s29\cf4\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf3\f0\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch WaveFileWriter}{\s29\f0\fs20\lang0{\*\listtag0} writer;}{\s29\cf3\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Now we add in the methods that support our calls:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f0\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch /}{\s29\cf5\f1\fs20\lang0{\*\listtag0}//}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f0\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Starts the Strem To Disk recording if a file name to save the stream to has been setup}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch public}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} StartStreamingToDisk()}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     }{\s29\cf4\f1\fs20\lang0{\*\listtag0}if}{\s29\f1\fs20\lang0{\*\listtag0} (streamToDiskFileName != }{\s29\cf6\f1\fs20\lang0{\*\listtag0}""}{\s29\f1\fs20\lang0{\*\listtag0})}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch         streamToDisk = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}true}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Pause's the stream to disk recording (No further blocks are written during the mixing)}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch public}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} PauseStreamingToDisk()}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     streamToDisk = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}false}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Resume streaming to disk}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch public}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} ResumeStreamingToDisk()}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     streamToDisk = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}true}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Stop the streaming to disk and clean up}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch public}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} StopStreamingToDisk()}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     streamToDisk = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}false}{\s29\f1\fs20\lang0{\*\listtag0};}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     writer.Close();}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Setup the StreamMixToDisk file and initalise the WaveFileWriter}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<param name="FileName">}{\s29\cf2\f1\fs20\lang0{\*\listtag0}FileName to save the mixed stream}{\s29\cf5\f1\fs20\lang0{\*\listtag0}</param>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch public}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} StreamMixToDisk(}{\s29\cf4\f1\fs20\lang0{\*\listtag0}string}{\s29\f1\fs20\lang0{\*\listtag0} FileName)}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     streamToDiskFileName = FileName;}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     writer = }{\s29\cf4\f1\fs20\lang0{\*\listtag0}new}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf3\f1\fs20\lang0{\*\listtag0}WaveFileWriter}{\s29\f1\fs20\lang0{\*\listtag0}(FileName, }{\s29\cf4\f1\fs20\lang0{\*\listtag0}this}{\s29\f1\fs20\lang0{\*\listtag0}.WaveFormat);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} Using the final set of data passed through in the overriden read method to also be passed to the WaveFileWriter}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}</summary>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<param name="buffer">}{\s29\cf2\f1\fs20\lang0{\*\listtag0}Data to be written}{\s29\cf5\f1\fs20\lang0{\*\listtag0}</param>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<param name="offset">}{\s29\cf2\f1\fs20\lang0{\*\listtag0}The Offset, should be 0 as we are taking the mixed data to write and want it all}{\s29\cf5\f1\fs20\lang0{\*\listtag0}</param>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf5\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch ///}{\s29\cf2\f1\fs20\lang0{\*\listtag0} }{\s29\cf5\f1\fs20\lang0{\*\listtag0}<param name="count">}{\s29\cf2\f1\fs20\lang0{\*\listtag0}The total count of all the mixed data in the buffer}{\s29\cf5\f1\fs20\lang0{\*\listtag0}</param>}{\s29\cf5\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch private}{\s29\f1\fs20\lang0{\*\listtag0} }{\s29\cf4\f1\fs20\lang0{\*\listtag0}void}{\s29\f1\fs20\lang0{\*\listtag0} WriteMixStreamOut(}{\s29\cf4\f1\fs20\lang0{\*\listtag0}byte}{\s29\f1\fs20\lang0{\*\listtag0}[] buffer, }{\s29\cf4\f1\fs20\lang0{\*\listtag0}int}{\s29\f1\fs20\lang0{\*\listtag0} offset, }{\s29\cf4\f1\fs20\lang0{\*\listtag0}int}{\s29\f1\fs20\lang0{\*\listtag0} count)}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     }{\s29\cf2\f1\fs20\lang0{\*\listtag0}// Write the data to the file}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     writer.WriteData(buffer, offset, count);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch All thats left is the modification to the Read method to pass this data back to the WriteMixStream method. Rather than pasting in the whole read method, even though it may make it look like I've done some extra work, I'll just copy in the last 8 or so lines:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch position += count;}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf2\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch // If streamToDisk has been enabled the mixed audio will be streamed directly to a wave file, so we need to send the data to the wave file writer}{\s29\cf2\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch if}{\s29\f1\fs20\lang0{\*\listtag0} (streamToDisk)}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \{}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch     WriteMixStreamOut(readBuffer, 0, count);}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\cf4\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch return}{\s29\f1\fs20\lang0{\*\listtag0} count;}{\s29\cf4\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f1\fs20\lang0{\*\listtag0}\abinodiroverride\ltrch \}}{\s29\f1\fs20\lang0{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Having jammed the check for streaming out to disk, after the final calculation and before the method is exited gives us everything we need to stream to our file. So now we have two methods of recording audio data and you want to know what my favorite part is? }{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch You can actually use }{\s29\f0\fs24\b\lang1033{\*\listtag0}both at the same time and get multi-track / multi-channel audio recording}{\s29\f0\fs24\lang1033{\*\listtag0} on the same machine with a fairly standard sound card!}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch I normally refrain from using exclamation points but I was actually quite excited when I tested this. It means that some one can be jamming along on say a C# Audio Synthesizer / Beat Box or composition tool like OpenSebJ while another person is singing vocals or playing in a guitar riff through line in. I guess if your really talented you could be doing both at the same time, perhaps signing to the jam is more ilkley - what ever it is it can actually work; you can record both sets of audio separately - because the NAudio Stream-To-Disk method is not actually using your sound card to save the mixed result. Cool, well I think so.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\field{\*\fldinst {\f0\fs24\lang3081{\*\listtag0} HYPERLINK "http://www.evolvingsoftware.com/blogfiles/NAudioTutorial5.zip"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Download the example program and have a look for yourself. }}}{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\*\shppict{\pict\pngblip\picw337\pich364\picwgoal6740\picscalex73\pichgoal7280\picscaley73
+\bliptag10001{\*\blipuid 00000000000000000000000000002711}
+89504e470d0a1a0a0000000d49484452000001510000016c0802000000faf01d
+66000000017352474200aece1ce90000000467414d410000b18f0bfc61050000
+00206348524d00007a26000080840000fa00000080e8000075300000ea600000
+3a98000017709cba513c0000001874455874536f667477617265005061696e74
+2e4e45542076332e3336a9e7e225000037b749444154785eed9d097c1455b6ff
+0b90cdf9eba828038a202a88080e206e4044645508b205410101650b9b2c8a22
+8bcbf3398ee0ee73749c37b8cc8c3aa20f07778588282e4836822cd993ee743a
+4927dde92d8198ffa9be49e5525b57555777baeb9e7cce275457df7beebdbf73
+bff7dcaaee146d1a1b1b39eaa7cda4436ddab483138d273bf2a7dbb5697ab343
+27feb8633bee8c76dca906f8dda65dbbc68646eed46f5cdbb65c5b8efbadd9cb
+2978813f22057849f1e73405dad4a320a729d0484f12386e38eddd3af20a44eb
+c0d59fe23a8478ab6fcb7538833fc79de2ed6488d6f640f419a1c26770271bb9
+3a4763dac0d31b02e8433f6d2665807558e2edb8b6a1cbc6c60b1fe3edb2271a
+afd8de38785be3e0971a873dcf5bd2cbbc8d7c45d14801345a0115b9987d0b67
+885401d16480028438e13761506a3ca1a71b900b06207758718a1b99c50dfebe
+19f4464e00beeddc7200beed0a77c7f5bf415101fbde4f358201f9573dd762b0
+0410a34fe2312a800a1856001023463c9063822e49bd8444c1e024fd922469c1
+08c2601d57378071b36ab9e15904769e796ed44fdc94626efaf1368b2ac0b825
+55c480ff76ab7ced56d7c32ac0ad6b68b7b6118c1cc36fe1243920273bacf90d
+b609a4241a2aa0a2409b15bfa1d10a8056f09280468022d626b5beeda2ba764b
+bded16b9dbccf771777bb83b43bfeff2c0cba633f35d1cb13995fc6f7837c5c9
+cdaae00dce80cd28e146677349b914f3137fe1ee2c68b17965dcc272c23f904f
+8ce75fc1f877a14f822d7243ffd0500154202205eea96c07b6a0a2cd02276cc3
+c1b83bcbb85976de526c4d0630139b5ec4db9442b036c9b9dc6d6047b9f1bff2
+060700fcf53f73ddfe1dba7f37e41bfe6d607efaf12623f087b017c86f4afecb
+3c9c60cddb01788b5f1de895862c2d682d0a947373d05081700a00d22223784b
+906ea6ba996da09a18811c080783cbf8a4834d06c003e96017ec08310f36ea27
+b881a7c43cd9f3d3db7ec2397f06b6030b9cdcbc72de605a931e93a5080d1548
+5805dadf695bfc3f15b6aa93c2ad2f8d07500bea92c96fdcc94b15ed6786b2f7
+94e2f6d30a173f5f66abd4df93270bda0f3fc8a7f7c1dff38cf7ff94ebfb7e88
+f9cbff29c77c299de705e605ce29d4cbf892c2e224da78083b10c60f840d181e
+88f6a264471a7fb6f8c5f25c5bc3bad782f3b70552fecb9fbcc53f61a3ef9607
+7c631ef4ddb48eb7e16b78bb6685176c50aab7dfbdde5e73ab872e29cc3ae181
+ba6444913a81bb6c5378e0eb8b722b9e5e57fef0fcb23529f6d464dbe209a50b
+6e29bd674ce9dd378195cc190e563cf31adea60f2a4cee973bb657c6f4a1d547
+b3163f59c0034f98bff4731ef6b33773b0c5e75f271d6c3b96cef33cf37c0227
+693c746dcfdb0267cb493ab1d3b91da7352aa04581f8e39c5e7a20ab3ff07af0
+b90feb5efaa8ee897f05ef7f3db8ea95e0d217028b9f0b2c7c2670f7b6c0bca7
+03b3ffe49ff9847fca63fe5b37f946deef1bb2dc73d99c924173be839c4c5c45
+ea2474710e4e2ab73f50fdd67335ff7cc9f5da1315dbef773eb9caf9e8d2f2ad
+8bcb372d743c74b7e3a1798efb6797ad9d695f35c5b6f4d6d2f9230b5386648c
+bbec9389836ccefaa63c3fe00719e6f9cb00b8a4e72fe64bd334ffc8ece7194f
+e9b2c3d7c2006b65e29ef945cf055ed95df7daa7f54fbd57b7714770ed6bc195
+2f03f6c145cff2d82fd81e98fbe7c0ec27fdd31ef74fdae21fbdc177fd2a4fbf
+bb4b2e18f7397f9fac99f9889c00f31379e6cbb72eaa79f715f7fbafb9fef654
+e5f31b2b9e5eeb7c6265f9a34b1d5b1601f6e50f2f706c98eb583fdbbe7a9a2d
+7552e93da38b665f9f755bbff7aeb980ef09ecedc180f94b7ea0f23ca47eb8dc
+871b00d006ccbc3bcb007972894e123bbccc79fb4262996f74fff9f53f7cff97
+ae7b5e389f2f86bb7a5ce3aca800d032ebbffd40fbf69d755bdf0aae793598fa
+62f0de6702f380f3ff0ecc78cc3ff511ffc44dbedb36f1bb7d48f2c3d67a87ae
+f0f45f50d26dc2973c69214d2275925c429877ac9f05b457bfb1bdeae5ad157f
+5ee37c3cb57cf3bd8e07e795ad9b5db67a867de554dbd289b6a5b7f1bbfdf923
+4be60c2b9c39346b52fff7afebc6f7e4ba2cde08f3703ddfb4b7d7c6fc6f959f
+f356fe41836d4743d1f65d4f9e8bccb77c6462c579cff2e88096698ff91ffa7b
+70d31b3cf04b9e0fce87cdfc1381e98ffa931ff68fdbe01bb5ce376cb5f78655
+80ba77c80aefe0e5de41cbdc0316965e3ce92b9a79da49d8bb806227cdcc97ad
+9e56f9fc43952f6e02e00307f7819fb2b5b3cb564eb72d4d2ebd775ce9dda34a
+ee1a5632fb06385ffbe5cee294c105d307654f1eb073d8c50acc5ff8159ffa87
+439ecfe53724307743799eff3090caf3e97fef16a2fdef0d45cf34e43ed470e4
+deb7379f25651edaf8d77e3f3d579abefad38cc447070370067eeb9d4f451527
+83f5bf915ae535a7c0943c2829abb7c5b0e5d5bb01d5e93e4b7b15d6bfc50b4c
+b571716c102fb86f07d7f0f78532fcc26dc1bb20bd3f1200e0c76ff0dfbc1680
+f70d5de91db4dc3b709977c032dfc065beab977906dc636b623e34349193b0cc
+8b9d34330ff7ed2a9e5c55f1e7fb20c30b4e42c08f2fbdfb6600be78e650e17c
+f1b48105d3aece4e9663bee91e1e300fa9ffe6d0077db0b107a8663ba497f3df
+bfd215727bc3898da78e2c3a9571fba983c35f5ddfb9696998ed802abccdb293
+869fdd5921cc5772e6cc6e8f9333c76cfc470ec7732b3b8e4fd735a7899fcefd
+7710e69d55c1ced77ea4e4019a03139a262f853e486b1d385657e36bd0d51f2d
+dda0fb2ced8c4a7ff4f604cb9bae00c46bdc433eb87a07e0173d1b9cf754e08e
+c70353b6f86f7bc83ffa7e5fd21adf75abbc7f5ceebb6a99afdf12df158b7dfd
+97fa062cf3f45f58da63d2d7749ea79d84655eeca49979dba27170f5ce6fe9b7
+2c726c9827f8295d30ba746e52c9aceb5a809f7c45f194fe8553076427f7df79
+630fbe27371ce501bf3283dadbd3ccc3e2d4ccfc0ffd3ba5f53bf3d3bebffbe0
+723e9f7fb6fdbc8610ed277f1e71f2c09527f75df8dcca4e70bedddc4a30fe4e
+5e087bd276307872cb5b4dd88b98173ad729698fae3889fc00f02acc0b5753f4
+72a3d25c139c83feadab4b5058bd1b749f45fdd7db10968fb1028479f8a06ee1
+767e577fd793700d1f98bcc93ffe41ffa8f5be616b7c435779072ef7f55be6bb
+7c89efd2c5be3e4b7c572ef55c794fe94513c5cc0b4ec0a78a137857ec6462d3
+f53c30efd838df0177e9e1f7fabbca56cd103882abf716e0932f2f9e78697172
+9fc229571e9e74e507375ed4c4fcb5471598870f03e1d37540774e39c0fc65df
+336b777fe87ce9b9bf5ff27b78f9efc77f7feae7e1a7bebff2d4b7179e4c3b07
+6c7b6a478af94afe9bbdcdcc671d76382b0367dc0e570a4e6aae3bb77de48397
+6e4f107e3fffca01fe2bc1212365a4c770a6a8e214bc054958f0238c9094cf28
+68faae021c080e6957a174aad610bdfaaaf824c5a095d08ea0a9cf42b7851e42
+8737fdcb2bed00a90eab21fc86cd8ea8abf832de1480308d58eb85dbf270737e
+ee53fc7d3bb8929fbcc53f7ea36fd483be61eb7d43d7fa06acf65db1c27759aa
+ff9265fe4b97fafa2cf3f45968ef3e710f3d996927705ec509bc2b7602793eb9
+04ce97cc1d01b7e5f99bf30fcc852b79fbeae9b6e593e9790bc7a553af28bdfd
+b292499794245f5a747b9f9cdbfa7c787df716e649aa87afe5f0f7f0e06e1e64
+ff71a5fcc515f95efe9c4a80f9fdcbcf72befc6cdee205cff6380f5efefda1ff
+f7977567beb0bad333cb3b02eddb533bd0cc87523d8fbd4066b9abbeb8cc4f9f
+81e3af0fd74181bddf1690dfeda7e4933f03106a898e330a79423edeefa437ea
+749903c7eba1c07b7b2afef7ed4370f0438ea7e9ef0a246ed51b123a000d29f9
+2465defbf0f0df763b3a0fd929ea2abc84938ffe692f942977d59d310d16506a
+5c29cef29a0658e6c0ffde1fcaa04ce689da789be5d81f5a0188d1f5abbc531f
+f5dff1040f3cfc9e0677ef80f987fda31ef20fdfe01bbade3760adbfef6affa5
+2bfd3d97fb7ba5fa7ba7d6f65e68ef7aeb69ccd34ec0a78a137857ec646a05b9
+295032fbfab295531d6bef70c08dfa3577d8574de3bf99b364bc80bded8e01b6
+e97d6d532eb525f7b425f72a9edcfbc8adbd3fbcb62bcf7c522e37ec1847523d
+dcb7eff2f4e9cc93bfc299ef02c8ff76c939b94b16a4df78cd63dd2f50f9b4be
+dd7c3718fc890f6fb35c023c4b5ff706eb1a6066533cbb60dec34b0286b3c2db
+717c1654a16b898ee1a61d94044e3ade7a84f6231c0b053a4c3a0e27218b761c
+7388f814b9526f8876aee45328036d75980cab55cb60e11896275291fc74befe
+536907e064fb2945c2f94eb7fc2874150fe24d0108e290e5de899b7d331ef7cf
+fcaf40cae301b8039ffc887fc266ff2d9bfc2336fa873ee81ff880bfefba40ef
+35811eabfd3d56fa7ba47a7b2cb09f37819fdec27ca39df0cc2b3b8177c54e78
+e6f9cc513c63886dd9c4b2fb6694ad99e9b82f056ee3db57240b938d1c94a5f4
+2d9bd6db3eb9873db947c9a41e47c6f5f8bf6bcee37b32bc981b5ec8337fd911
+3ecff3ccf7822fe2e7f2791eaee409f3777b00f2677a7479e2c2f33775ebbaae
+eb1fe0e5c60f0b893df05ede7d6f1de777f50bfce43718ff077df0f77d77f25b
+7742292c01cffcc72f748b9c11de6d02e386cfc96241d7d2752c2ddc79c0db4d
+0bd0e96e236988f8a4db12792baae0d7b2f7f6544149a5fe0bbd927545bfcbca
+31fc45771c1bc4f1aac55ef8ec7df2563f803afd71ff54c0f5d1c084adfed15b
+fd495bfcd76ef20fdc18e8bb21d07b7de0a235816eab02dd52bd5def2efbfdf8
+b410f3fce8444ee0a58a137857ec24c5cd4dad81f345b75f059fbddb974f06da
+cb564fb7af9a2a9055b628891cffe6733b66f4764cb9a82cb95be96ddd7ebda5
+eb47837fcff7649483bbb988c7feea5c9ef90b5e08310faf79e69d0478c2bce8
+07507f735fe3339f34aeff47e3aca77ee6695f5acfdfb787bfec0d614fc81766
+3cf9cbdedda14fe6c82af0d734f11f09c0869c14a36bd1c742ca552a232a0079
+1e1a223ea59d516948a551c1a76868b437e1ad0ed3f86f5090f1d205c8822818
+14809b1afc3a78fa797c193f0a408cfa2cac4d5ae79df0b06ff2232dd94b800d
+0e066e0af47d2878c98640f77581aeab035d9679cf99eb3873cc5e9eb4e61428
+7232f951ffc447fce3b7fa6fd9ea1fb1d57fddd680e0046a899d00f3296e385f
+38b14fc9bc24db9209f61593ed2ba7b400bff496b245231c0b5beedb974fe9ee
+98d4b5747c97a323cfd935f0cc26e6017bc8f62dcc43c6e79977c22e82000f93
+b509664275ea6ff07bfe0b99cf86809ffbc2a9912bbf8633f0cc1d423e600fd6
+e65ede8419cfcdaf2376dcc65f72c3fcce280a25c30f0fc331fc8663b8d5d721
+a50ccad4f8f95d31ecf95f4be3efd891f2709e54f9f88b63704c9f178e0fe436
+f9fc289d3ff8f16049e781ff149a967646a92161ed80ba4a3ea5de8433a49fd0
+7fd20d720cae68b750e6eb230d70127e4301b89dd1f9daff085dc58378530062
+d4736e2d7c20077f5773ebc34d6989069e677e73a0cfc660cf0dc13fac0b9ebb
+3270d662efef6697751815caf3a1c92f7572db96c0842dfeb15bfda31ef10fdf
+eabf16986f760285c54e60b390e285f305637b16cfbaae74e12db625b70a7db0
+2f1d5bb66454d9bdc31d0baf75ce1b289c2fbfed5cfb98b37e1dfebb5d5775e0
+7b32be9aa79b60cfff2d2de479c2fc44f803589e7900be69d3beb4beddf29302
+dbe31ff866e4aaaf872df9e2da859f82c17978e00e5911c0e0511e60dca296bb
+eb640920565e5d0f0c13de563df071879925cbdee2733ee4ba4eb76640817ffd
+782a58c7d37eccdec23ca95b5cce0be7a6eedbd32b0b1c67e6376d257e381680
+563a25e708ed0a4c0a67941a82f3a4302929eb53ea8d3e9399c7a7821f4e9ccc
+2ce03b0c5b98f6735d7fddc78f0bd62cf009c76e2fdf0a2c047b337dfc4d8a29
+c76995583be6e69f8a678348759b5d7bf552efb035de5b36c833df7f53f0f28d
+c18b37042f58173c7b45b0f33ddef633cbda8edc1b629e1f9d1627f43a227632
+a78e9bcd7fc8957f73b7a2a957c3c77280bdef9b8fe18c7dd168fba251f67b93
+ca16dee0983fa47c4e7fe7eccbe17ce0b337ca279c6dbbb9f3afd7b5ffbf2bda
+36310fd803f33738f96fe036efed8bb98970ff9c7fa40e300f495be5a69de8ad
+76ab1ac1c8237e08ffe4db2fe458b0ce23f7c071e71b3f86b7da2f0ac031fc86
+633843ca74bcabacf3a07778686ffd45e4a1f3d8ef4949fa3c7ddc29399bbcec
+34f598a85d6967941a82f3617d4abd49ab401f487f3accad80cec06f1857c759
+254dc7a151f06766e48bbacada4bc810f16c40cbf9336bfb2ce4bf547be31a6f
+d27a5fd27afff0fb7d373ee0bb7e836fc883fe010f06fa6c08f47a20d07d6de0
+dc55c1df2d0db49fef6d3bddde262974df3e34ba489dc0c231874f217923ce87
+ed7dd18cc12577dd583a2fa9f4eea4d279c36df36eb4cdbbde3e7748d95d031c
+77f4299fd10b36f690e41d637e579ad4fec8356d3fecdb86efc9a4daa6540fcc
+c3b7ec79e62f4ce7937e887992e4430fdfe2937c077812deea0678c41d79ca1d
+79069e60e47ccb03cf42f013636dfae278ada700d072f694aa1e7755f7bba7e6
+8f4b6bae59ee1ebac23d788567f04acfd5ab3dfdeff3f4b9afb6d7eadaee2bbd
+5d52bdb0abef38bfb6ed9d355c7231378cffbb3a2248844e84cdc2d1ebcf3e31
+ba47dea47ef9d3fe5890724de11d430b530617ce1c5c34f3eae294fea5d3fb94
+4ee9659bd4dd36a18b6df459a537752cbca16de61fb9f72e0b3ded129827d803
+f34d7bfbd39927d8f3cc2fad872b76f2d04c1e7809f3e489974ad80bfce3012e
+8289b822d85c0dfde61574b9bde0a29482de7716f79953d4776ee1e5738a2e9b
+57dc7b5e71cf79c517dd6deb3acfd665aefdecbb6c9d67d9cf98616f33b9981b
+9bdd6bf26702f3113ae1370bf34fd9aa1a7eb9b5dfc11bba1cbce9a2f431bdd3
+c7f7491fdf377ddce519e32fcb1cd73b6b6ccf9cb117e5dcd2f5c8cd5d7292ce
+3e7263e79c6bcfc81cd4665f7feedf237af1cc4ff59ec63cff591dc53c799226
+49f524db7748ad1393bfb629f32b019f8801c63ea302220596fcaf3fe3b8bbdf
+cc6fcf1af9c9b963be3e6fec97e78ffdfcbc319f7719fb5597715f9f3376cf59
+63d3ce1cfb4da731dfc24dbb7623d3da8cfc961bbea7d7e4cfd38f56415de22d
+12278bffea23cc2f7ed5e73a92f1f1987effbceaacf7079dfbefc1e7bd3be4fc
+77079df7fe902e3b8774f960f039bb069df5d1d567ee1ed86957ff0ebbfab5db
+7d459b0f2ee7de1fd1cb79387df18bf0699f3cf3700f2f743d1ffa5e0dfc26df
+b409257c789a6d887c622b4e11839dbfd4c838c91e018d56209e2f5cb16fb20a
+b45f7c12a8a36fb06939869c0cb5a02ef169dcc9abb5ed1704f89bff73eadacf
+0b2cfe9fa6efb669e9032963ab3c05c0b7bfdd73daf53ceced9bf37c8879f872
+2ffc5d5dd3430b9bbe900777f55a1ed64b3fcd7a297fa35e64304872f339de3e
+778983fec4f53dea56ba7f8ef3e47405e02e7de8a61ddcabe73fde870feaee80
+6faf07788383142f9fb1c96f7220d8d41a6e52357c7ba7e95de1021eaee16923
+d7f32dccf31fd715f28fc51d9dde664c063c1b8f7f3c5ef30374e1c1bac4f807
+e9c0d2c03f9a2f64fcf3b49b8fc941e8af02d05081f00a8c836f85a0510a0080
+f08774b29a8ccee5ffda1d0cbe324beca6e34d2fc9793072067ec3b7ebc1e08f
+68c8d7ece1007e03e0f2cc8f4ee7990f612f904ff8171929c09b509eaad8f2ae
+508ced0350154da440d3cc21d3062da440142709f9ee6dd37dfbeee91d871eef
+9aeaea949257597e140d154005aca70037c1cd0d3fcef57e97ebb28de390795c
+e95001ab2b80cce3760615604b01649ead785b6fa78a23d2ab00328fcca3026c
+2980ccb3156fbd3901cb5b4f01641e994705d8520099672bded6cb5a3822bd0a
+20f3c83c2ac09602c83c5bf1d69b13b0bcf51440e6917954802d05c4cc77c6ef
+de5afd6b58d64b5c38225d0af0ccc35fe65cbca3e9bbb7c8bc2ef9b0302a9070
+0a20f36cedeb126e8262874d5720bacc73e3720433bdebda1d421ff4160e5b85
+1e1a294cff566f2eac73a1bab415a1a1b023d2de0aed4a4b2d2d65c2764f63a3
+a2b6d45f6a91ddf4ceeb1a693c148e22f39184c75c697485596361a56261ab87
+2da00283f66545fbd220925aa57bc25bba86a02594ea8dd2ef4632a94cefb696
+a1c56119eb33af8b13eda820f326ce6663cc4729b2268e2b3e5db502f3f47e55
+ba8925678470cace06c183c6c2229265f386a857744e236f85cd87a22928eaa4
+68a442cf69e7d28664d39a52df4479588bce4419511f6855459b0e7a8c4a3d57
+72484741566d159d454313c59dd6567aac37b2f109aa89bd3281f98c8cb48c8c
+bd82c90640146f51192984b2b3503a6ce9d2200b896812cb3627db25d9d54184
+ab9434952546bb0ed25664e7bdecec17ad3eb29b17a532d2f34a14a934adcea4
+ae704b5752e992a46b455011879ec689709c9699b9d7c05a1029f3204d56d67e
+d98695f0530a399d1f5460a35353d8c92debc72ce665333fbd0c89329eaea547
+29d986cd964201a5b12be94caf32ea01551150bbb65a72b5748954c15b76a955
+ea8ffa04330052ab54c9cede0f00ea6d3a22e63333d3b2b2f62935a98b79597e
+64e7bd965945a726618a9b950d9468a41720d1d8e9d169ec4658e6c382a74528
+693f35e67951f2d73828a5355a8540d15b7443518aac5e845ab77c76f67780a1
+ae3e8899ef34f898f66760c2ae5ea53163cc1b48dd4a3326ec84269346253f68
+9c8bd294a5a5a23a930698177640d2bada6193a557fb0e457d25d2de0dd19a22
+da834435b2baf88987c27a77f811321f665f215d89857929f0468753255d8852
+a5e0599658f5544cb3219b37689f7443b2e95a25e389c6288b225d46692a2b6d
+82c2263a69e765ab28f5212c5a8250d26c2c9b9fc3aa2d8aa6d24b15a1a4ebb8
+68c8d23ec403b791f441eff63ebacccb8e441ab048068c75d557a238d7072743
+e40142e619fd2eadec9e22f2f9140d0fb2bbbf6834c488cf04609e9148e03051
+81d82880cc339ae76333bdb0953854009947e65101b61440e6d98a771ca61dec
+528c1540e6917954802d059079b6e21de39482cdc5a102c83c328f0ab0a540a4
+cc771c7c54cf776f757fbf3f0e9749ec122a90d00a1864be67f3333091f9840e
+3f769e41059079b6f6750c4e711cb24801641e994705d8520099672bde98f450
+01641e994705d8520099672bde98e55001641e994705d8520099672bde98e550
+01641e994705d8520099672bde98e550010b325f5e96535a70a828efa7c2dc1f
+6360b947f645cf84fec3708af37f8671c1e870d682021865c3d3c082cc0318f6
+a28c8d2fbfd3e78ec7b911ebad615d93b72cf9d30e47691698e1605ba92246d9
+70342dc83ce443003e65f39b69e9798d56f9c92970c0881e7ef95dccf364ae63
+9491f996cb72980d90e1f71ecafdcd523f0d7b0f9d807155398f1b0eb6952a62
+940d47d382791e2e7d613fdfd0700a2cf473d20276f264bddfeb817155571518
+0eb6952a62940d47d382cc43060036eaf99f3aab58d0e7f5d4b89c30ae1a57a1
+34d83da63ea2c50ccf9238acc86094cd8a8265990f0603c1a0df1a1608f86add
+ae2aa75d85f9dcdc5f89e5e71f2b2c3c515c9c6fb3153b1cb6cacaf2eaea4ab7
+bb1a1605b3264d3cf821cc331565b364b72cf37ebf3764b5111a47fd44e8ca70
+759fcfe3aea9a8701487655e09f8da5ab712f3f400e1d8ac89156d3f8479b3a2
+4c4223924238693870ba2a868db259925a987942bb27128349405717bd8cc4b3
+aeba3e9fdb5de3ac7014a933af02bccfe755619e9e4c89827d33f32644598885
+6cb86316f4b05146e615bf3fd73c1b3cb070828e9118c49bae2e7a1989675d75
+bdde9a9aea726759a10af3eac007027e8b326f42948558c8863b66410f1be578
+61be53fc3d0393304f02093a4662106fbabaf092de040a058493e40c294c4e46
+d207a85b5b5b5ded7294dbd59897bd86872d3d647800beae2e688079614464b6
+d15b00e1585a46f49630534525239cc12646998ea034dcd2a0d3f115021d6188
+b5443942c584ea46f6f637e57217bfc175d9c671ddd3e396791203a025128378
+d3d58597f479722c7b46b6bc81fe783c2e575599c356a092e7a537ed68e0e1a3
+3ebdd7f352c2759da1c9575a2f2299c4847953a22c44845eca5562278ab86892
+18882fa91236ca91c845d7b530f3d55e2f48e98ac442e16cf120bca4cf9363c9
+74e1cf0875457ef476c9e3a97255d91db67c15e64577e945c0c35715f4e679d1
+88e8542f4df2a4b00adbb2de2299c4cdcc9b1065f530d141174641224e2a4618
+5ca1f5b0518e442e26982752828e91188493ae2ebca4cf93635149d119e9bbba
+7ae576575655daca4af35498a73f9693020fdf4834c0bc749289c0a633bf74ff
+4f2f01d29211ce60c2bc29511662211b26697c4567220caed07ad82847a898f5
+f7f6b0530273bbab223108275d5d78499f27c75ace18ee494d4d656585cd5ea2
+c6bcf039bc2cf0f0670791304f13ab7e4c6f0164b706a2bd80e1794c983725ca
+425c44e126e795e24bde92ad622cd061a36c582b5145cbeeedc9f2096b678446
+6f4a0557ea2749b1d06c686a9d3e36d09f9a9a8aca8a527b49ae4a9e275fbc51
+02de00f3044ef2a3f2619ea88c684590be1479333c8f9b993727cad290496327
+0d7a846115cd84b05136ac152bcc134141c76818043b1a6e957c56579757384b
+6cc527549857075e8579b366528cfd10e6a31ae5b02136771a848db2590a5b36
+cf8702e68c9285821d2de752cff0419dd351545a7c2cc47c9134f65abe6c6fc9
+efde4635ca2a212639dfdc391036cac87c98efe45456d82b2a6c6070250cc789
+6b3084721ef8e3857987f9cce62a362bf609ed87e4798cb281205a30cf97e41f
+84a7caec3df05371c191c2fcc345f9397090b806fd2fc8cd3af1eb2f9f7cfd35
+8cabd66d371066eb55c1281b8ea90599b715a52f7e72c76d6b5e7ceb83dd4732
+be4b74cbc9d89f93feedae4f3f99b0eab9d4a7dff4792b0c07db4a1531ca86a3
+1929f371f87f5197db0f831c9b5f7dcf62cfc35bb1ed6dafd719f0bb0c07db4a
+1531ca86a36984f9a43cae67f3776fe39079787a143c4ca6d65de6f75505fcd5
+417f4d301045abaff747cfa89e7bea829e60c05d5d956f38d856aa8851361c4d
+0b326f580bac880ab0a000328fffa7052ac09602c83c5bf166218fe118d51540
+e6917954802d059079b6e28d39101540e6917954802d059079b6e28d590e1540
+e6917954802d059079b6e28d590e158894f9387c06260615154005541430c43c
+3cf77647fc3ef716e38d0aa002c83c6ee0510154a04901ccf338155001b61440
+e6d98a376e7a5101641e994705d8520099672bde98e55001641e994705d85200
+99672bde98e55001641e994705d8522072e68f754d75754ac9d3b27cea6d4c8b
+4f2c830aa002ba14d08b2137c1cd25e5723d5bbe87a78bf9345d9dc3c2a8002a
+60ba0299997b75f98c88f9ccccb4acac7dbadac3c2a8002a60a202d9d9df0186
+ba1c46c43cb404fb8aacacfdba9ac4c2a8002a608a02d9d9fbf56eeca1dd4899
+0f619f060da3a102a8406c1548d3bbab270b8d09cc9bb262a113540015888d02
+c83c5b9febc46656612bf1ac00328fcca3026c2980ccb315ef78ce3fd8b7d828
+80cc23f3a8005b0a20f36cc53b3699045b896705c4cc771ca2e37b78f13c30ec
+1b2a800ac82a10621efefff9e6efde22f3385150016b2b80cce3de1e15604b01
+649ead785b3b83e1e8b42880cc23f3a8005b0a20f36cc55b4b1ec032d6560099
+47e65101b61440e6d98ab7b533188e4e8b02c83c328f0ab0a50032cf56bcb5e4
+012c636d05c4ccebfabfa8ad2d0d8e0e15b0a402d2efdb1fd5fedc5b4b2a8283
+4205acad00328f7b7b54802d059079b6e26ded0c86a3d3a200328fcca3026c29
+80ccb3156f2d7900cb585b01641e994705d8520099672bded6ce60383a2d0a20
+f3c83c2ac09602c83c5bf1d69207b08cb51540e6917954802d05f019986cc5db
+da190c47a74501641e994705d8520099672bde5af20096b1b60251649e1b9743
+5b347404ffea6e4981b0c5b4f48d76a5c5a196325ada15ca681f8b894deb7525
+445cd7d0b404912e63785ee91d8e89a3881f57d1655e1427d3871d3684da39d1
+d837ed0ec3f64d638b22e6c3d632a55dc1892e6f74615d1575312ff2acab215d
+85c34a9da00590797d7b7b645e65a24789a8482017f5364a3d4c2cf85b8779e9
+0e30ec19528088abb2b513f9514254b698e05cd40a7d5e70a8a5c3b27e64f7a8
+a2a6e9eb11d160a52248a735dd49a5b1087ad2c2d27b0a5a3a5119e9d8a5fdd7
+354c698755a2acc4ad34a65a264c62e16a4a6f4d603e23232d2363af60a27923
+cb8668bf2add13aa9c91be252b8468ca2a89255d14a4534aea4abd0f4a4d2b4d
+568170ed3aa874809ee84a4b897a19e98a235df59420371c6e5197b40c50634c
+655dd13336618fd33233f71a580522651ef4cacadaaf429d086fd1fa2d454efb
+34a5a7a6ec4223cb9228efa94f357a06872559282ccd902a8951da843a606117
+29d399972ed0a291aa475ffb42a67165515a3a65f5174d129565d7003cad5e25
+3b7b3f00a8b71b11319f99999695b54f7db995655e544529b5ca4e028d194025
+cfcb7a10b1a434539590532f1f764d8cc4ad48bd1830af659249bb61603b23bb
+9b90e55665655199305a0612e765b2b3bf030c75753222e66157afd258d8b968
+6c124489799584205d3eb4e72e03bd15b642b25d8a873c2f5dc79576672a43d0
+324c2dcc875d2eadcd3c48a477871fd1f7edd5f7154acc0bc1160583eccde8f9
+449f917d4b768320ecf164d714611ad1c594e696922be1bc4aafe844271a9a74
+8ca2c2342aa2b6c2ba554ab0b262ca1696dd5ec97649bae24b555509b7caa24f
+d70a1b65d9986a9c30ba32647c16d6bbbde799bf2997ebf906d7651bc7754fd7
+f5ac6bbd8dc5a764d82b5420a115d08b2132afeff3f9849e1cd8794b2a80cc23
+c3a8005b0a20f36cc5db92890b07a54b01641e994705d8520099672bdeba1202
+16b6a402c83c328f0ab0a50032cf56bc2d99b87050ba1440e6917954802d0522
+67fe98f6ff8b5a6f63ba562f2c8c0aa0025a14d08ba1f43b39c83c5b5942cbac
+c232f1ac00328fc4a2026c2980ccb315ef78ce3fd8b7d82880cc23f3a8005b0a
+20f36cc53b3699045b8967059079641e15604b01649ead78c773fec1bec54601
+641e994705d85200993721dee56539a505878af27e2accfd3106967b645ff44c
+e83f0ca738ff6718178c2e36f9075b898d02c8bc09cc0318f6a28c8d2fbfd3e7
+8ec7b911ebad615d93b72cf9d30e47691698fa5c3c9a73e0e71fbffaf1c01796
+b11c85c7b1c786c968b782cc9bc03ce44300fe8ae4270e95355ac960440fbffc
+ae7a9e07e08f1ef9c9599eeff33aad61aeaa6218118c2bdaecb5967f64de1ce6
+21c37f75d86f3d837155398fabcc4ec8f056029e2c5b302218576b3119ed7691
+791398874b5fd8cf7f91edfb22db7f8aff396901fb228b1f0e8cabbaaa406516
+c27ede1ae95d340a1857b4d96b2dffc8bc09ccc3de1ed8f834c3fb59a6b7bebe
+ce1216fc2cd3f759860fc655e32a44e65b8bcf68b48bcc9bc6fcee5f6a3f3e54
+1b0cfa2d6081806ff7217e38c87c34a86b5d9fc8bc69cceffad903e6f7d7ea32
+eef41f5d75351686163496148af97cfc58761df4c49ef9f7df799558eb5e32e0
+de5e5898f0efe765d608b2b7dff943cdce036ebf1fb0d76121205bca8b5eea72
+a554d8804f9fcfbdf340cdfb076a62cc3c8dba70dc2afc23f3c8bcda768030ff
+ee77d5ef7c5f03b4e83200922e2f7aa9cb955261033ebdde1a180e582b322fe4
+7964dedc6b01dcdb9bb6b7ffc737556fefab025a7419004997a75f0abb7ea140
+d833a400294f5f34e8ea1214aeadadfec7b7ae7fec73c509f374cea777fec285
+80e9eb02e679ccf3e1f3fc8e3d9560408b2e135dcf0b75e1bce858d71969615d
+bdf2785c6feca97a634f658c9987dc2ebd9e97dde49393b2d702a6dc0840e691
+f9f0ccbffea5f36f5f55d4d6ba745908ce962ac24bc95ae01295845af419724c
+5717dc4a2b86eda1c753f5b72f2b5effb222f6cc4bb7f4c83ceeed4dd88d9b2b
+22b99effcb67cebf7c560eb4e83200922e2fbc149d8732ea67c8bbb2d5a515c3
+f6d0edae7c35341c64dedca9120fdef07ade84158430ffd26ec74bff71b8dd55
+ba0c80a4cb0b2fe9f3e458d71969615dbdaaa9a97c79b7032cc6ccabdfb797be
+8b7b7b038b08326f1af3cfef2a7b7e971d32a42e0bc1d952857e296cef850261
+cfc8561735a1a57b353515643831665ef67a9ebe6e175dede33d3c64de04800d
+8848f2fc331fda9ff9c006b458c0aaabcb6138db3fb4c59e795d77e04cbf5d2f
+b48ef7f0f01e5ef87b784fef2c05aba9715ac0aa5d0e7e384dcc17c5edf7ed91
+7903290af7f6266c0d489e7f6a6729584585ad92377be21a0ca1dc51448603e3
+72bb8ae396795d9b025d8531cf639e575b1a4af20fc25365082416331857addb
+aece3c3c6442174ef15f184684cc23f36accdb8ad2173fb9039e2a93bcf99b65
+8fb92c6330a2d4a7dff4792b549887c74859f23939167e3c16eeed4dd8db97db
+0f03159b5f7dcf62cfc35bb1ed6dafd719f0bbd42f1af17978062eaa5bb10a32
+6f02f3f0f42878984cadbbccefab0af8ab83fe9a60208a565fef8f9e513df7d4
+053dc180bbba2abf152728366dba02c8bc09cc9b1e1574880a444f01641e9947
+05d8520099672bded1cb1ee839511440e6917954802d059079b6e29d28b908fb
+193d059079641e15604b01649ead78472f7ba0e74451009947e65101b61440e6
+d98a77a2e422ec67f41440e6917954802d059079b6e21dbdec819e134501641e
+994705d8520099672bde89928bb09fd153009947e65101b61440e6d98a77f4b2
+077a4e14059079641e15604b01649ead78274a2ec27e464f01641e994705d852
+20c6cca7456ff542cfa8002aa04581ccccbd5a8a0965b8096eeea65caee71b5c
+976d1cd73dbdd3e0635d535d9d52f2b478c9cc4ccbcadaa7a524964105508168
+28909dfd1d60a8cb7344cc434bb0afc8cadaafab492c8c0aa002a628909dbd5f
+efc61eda8d94f910f669d0301a2a800ac4568134bdbb7ab2d098c0bc292b163a
+41055081d82810623e8fbbd8d0f57c6cba88ada002a880890a20f36c7dae63e2
+d4415709aa00328fcca3026c2980ccb315ef044d4dd86d131540e6917954802d
+059079b6e26d62ba405709aa00328fcca3026c2980ccb315ef044d4dd86d1315
+40e6917954802d059079b6e26d62ba405709aa00cf7c92d1bfab4bd03163b751
+01961540e631cfa3026c2980ccb3156f96f31b8e9d2880cc23f3a8005b0a20f3
+6cc51b731d2a80cc23f3a8005b0a20f36cc51bb31c2a80cc23f3a8005b0a20f3
+6cc51bb31c2a80cc23f3a8005b0a8899efa8e7f9f6b864a202a840c22980ccb3
+b5c627dc04c50e9bae00328fcca3026c2980ccb3156fd393063a4c3805907964
+1e15604b01649ead78275c52c20e9bae00328fcca3026c2980ccb3156fd39306
+3a4c38059079641e15604b812832cf8dcba12d1acb21f8d7ebd6401595268837
+c33e0d54345085ee7fd8ea610b68115ce444bb4ff58adafd0841d15545cbd02c
+5026bacceb9a6d06d43410510355c2326fa0e786ab44d8ffb0d5c316d0d2f348
+98a7eb1af613c942ac6580095d06998f685f670a21ba2650842d86ad1eb68096
+de1a66956c0c8526a4c7dabba7bda4961159a94c8879f8ffe777705db6715cf7
+7413bf6faf1278125a5144d5cfd0ef0ad5a571157926054475e924a0d10309b9
+5058d401e979d114a17ba5a5332afa68ecb09298d2a0c82a2688460f4d49041a
+5169cf69572ade68e7d262b27b75d9d5416f68ac04b3c6b198c07c46465a46c6
+5ec1646780f6c55ba054b4d8abcc03f5b420aa28f22f4548a95d9569a7d46769
+c7b47446aa95927ad295457d8193ee78d5db52e1505727550a4bd720d9155909
+6f8dc192ad4e4fdac43c4ecbccdcab9173ba58a4cc83585959fb651b960da768
+d597d2224a2652d25400d03211c332af9428a2c7bc14d4b07d382d84d4bd5211
+d5da1723599de9a42d5dadb477522ff31a836e20dcd255cf0033f153253b7b3f
+00a8b73f11319f99999695b54fa94915e6651394681e9b95e765fdc8ee1a3402
+a334d5b42c46b2795e3639abab21dd41845d92a48ba9ca78c3522add1f6919be
+3accd2fed0728996185dc1d2b851d20b4f3c94cfcefe0e30d4d5938898875dbd
+4a635a98574a4461e79cae194c17164d2395d547ba2350efad96492fcbbcd242
+a08271ec995759980cec2644de948623f5ac1e4a03cbb12e5ae2b3b0de1d7e84
+ccabed2b949817e22d8a1059c8e9f0d36764df92cd362ab5e8e420ad2bcc2721
+a5d0674475e932d274a4b49468615e5d1f9521abb0274d922a830dfb96a88034
+64d2d08b2415656959e665973cd15a2fc45a1a02d9255b29e8f109b3c65ee9dd
+de4791798d3d6ead62960cbf5e317589a0ab70d89e98eb2d6c73162e80cc87ff
+bc5db4a1b0f06c083b348de099ab98b9dec28ed1f20590f9f0cc5b7e12e00099
+52009947e65101b61430c87c4f43dfc3d3db1853ab2f0e1615888d027a316cba
+8787ccc7263cd80a2a60ba02c83c5bfb3ad327103a4c38059079641e15604b01
+649ead78275c52c20e9bae00328fcca3026c2980ccb3156fd393063a4c380590
+79641e15604b01649ead78275c52c20e9bae00328fcca3026c2980ccb3156fd3
+93063a4c38058c307f532e87dfc34bb84863875101a200328f791e15604b0164
+9ead7863ae43059079641e15604b01649ead78639643059079641e15604b0164
+9ead78639643059079641e15604b01649ead78639643059079641e15604b0143
+cce7713ddf30f27f51eb6d0c9764540015305d01bd18f2cfc0bc09990f7d8711
+0d154844059079441715604b010b325f5e96535a70a828efa7c2dc1f6360b947
+f645cf84fec3708af37f8671c1e81231b7609fe347010b320f60d88b3236befc
+4e9f3b1ee746acb786754ddeb2e44f3b1ca559604ab3e768ce819f7ffceac703
+5f58c672b2f6aba3c2e090235f3b2cc83ce443003e65f39b69e9798d56f9c929
+70c0881e7ef95da53c0fb3ffe8919f9ce5f93eafd31ae6aa2a8611c1b854d638
+d6861c39f046ff9636beefe101f390e1f71ecafdcd523f0d7b0f9d807155398f
+cb061e32bc958027cb168c08c6a534d1191c32322f7feb052e7d613fdfd0700a
+2cf473d20276f264bddfeb8171555715c8061ef6f3d648efa251c0b894263a83
+4346e6e599873c0f6cd4f33f7556b1a0cfeba97139615c35ae42649e2880cc1b
+5b02ac793d0f6c04838160d06f0d0b047cb56e5795d38eccd3b31c996f1de63b
+0d3ed635d5d529254f4bf37a17182d3ea565489ef7fbbd21abd565dce93fbaea
+6a2c0c2d682c2914f3f93cee9a8a0a477154997fff9d57698b932b8558eeed85
+e1b7eed855866c8c08512dbd18367d0fefe2e6ff7f3e8e9927b47b745908c896
+2aa297ba5c291536e0d3e773bb6b9c158ea268334fcf7500a075a73e693d66cc
+d3e3158e5b4504645ef777a49af3bc07d223d0a2cb0048babce8a52e574a850d
+f8f47a6b6aaacb9d6585c87cf4f6f6b27823f32078c2e479821cd0a2cb0048ba
+3cfd52d8f50b05c29e21054879faa2415797a0706d6d75b5cb516e6f1de6453b
+5ea57c283a4f6a45be5368953c2f749b1e855487285d0b609e3798e70957408b
+2e135dcf0b75e1bce858d71969615dbdf2785caeaa3287ad20da795efd7a9e30
+2c655eb413965d140cc31f33e6c9d0444b95ec265f4907c363d4fef1245ecfab
+7d56e7f55683d5d6ba745908ce962ac24bc95ae01295845af419724c5717dc4a
+2b86eda1c753e5aab23b6cf9d1665e76d68a1682b0d7bde6de0b8c25f3747a27
+c7c87c22eded0948408b2e0320e9f2c24bd17928a37e86bc2b5b5d5a316c0fdd
+eecaaa4a5b59695eec9957c9eab2395f7432f2d487cc9b92db692796bd6f0ffb
+6130b7bb4a9701907479e1257d9e1ceb3a232dacab573535959515367b497c31
+2f6c83adb1b757dfbf685ffba2bacc99c2bf8599e7333c64485d1682b3a50afd
+52d8de0b05c29e91ad2e6a424bf76a6a2a2a2b4aed25b9b1cff3f4552ecdb6e8
+9a567a199c70f7f064afe745db7bd95b7aa6dcaaa4570abc8767f01e1e610968
+b18055579757384b6cc527a2ca7ce4092a1a1e5a656faf6520a6a32e348acc1b
+643e84bad31a061fd4391d45a5c5c742cc17e1f7ede3e1fbf6ec32df71f0d1f8
+fcee6d6585bda2c2060657c2709cb8064328e7813f5e9877189877bb8a91f978
+605ecb5ec0589978ccf349f0ffcfb73cf736ee982fc93f084f95d97be0a7e282
+2385f9878bf273e020710dfa5f909b75e2d75f3ef9fa6b1857addbaec43c3c64
+c2d8248bdb5a3022f5bd3d6b436eb57b7871cebcad287df1933b6e5bf3e25b1f
+ec3e92f15da25b4ec6fe9cf46f777dfac98455cfa53efda6cf5b211b78788c94
+251f1aa3f2782c06878ccccb5fea97db0f83349b5f7dcf62cfc35bb1ed6dafd7
+19f0bb9402cfe0c3e1181c72e4d81bf9ac2ecef33c3c3d0a1e2653eb2ef3fbaa
+02feeaa0bf261888a2d5d7fba36754cf3d75414f30e0aeaeca8f3ceae8816505
+2cc83ccbe1c4b1a302611540e6757f161856532c800ac4b302c83c328f0ab0a5
+0032cf56bce339ff60df62a300328fcca3026c291029f371f83cbcd82c96d80a
+2a90a00a18653e8e9f8199a091c06ea302b1510099676b5f179b5985adc4b302
+c83c328f0ab0a50032cf56bce339ff60df62a300328fcca3026c2980ccb315ef
+d864126c259e1540e6917954802d059079b6e21dcff907fb161b059079641e15
+604b01649ead78c72693602bf1ac40a4cc771c1277ffff7c3ccb8d7d43055a5d
+0123ccdf94cb5d2c3c0313992fc79d022a90480a20f38914ad564f11d8010b28
+1063e6d32c20190e01154868053233f7eaea3f37c1cd19dedb6766a66565edd3
+d51e16460550011315c8cefe0e30d4e53022e6a125d8576465edd7d524164605
+50015314c8cedeaf77630fed46ca7c08fb3468180d15400562ab409ade5d3d59
+684c60de94150b9da002a8406c1440e6f13e3f2ac09602c83c5bf18e4d26c156
+e25901641e994705d85240ccbcaee7dec6f362867d43055001590578e6f9ffa3
+d2d0736f51535400154838059079b6f675093741b1c3a62b80cc23f3a8005b0a
+20f36cc5dbf4a4810e134e01641e994705d8520099672bde099794b0c3a62b80
+cc23f3a8005b0a20f36cc5dbf4a4810e134e01641e994705d8520099672bde09
+9794b0c3a62bd0c4fcc5f83d3c7cf4252ac08602c83ce67954802d059079b6e2
+6dfa46111d269c02c83c328f0ab0a50032cf56bc132e2961874d57009947e651
+01b61440e6d98ab7e949031d269c02c83c328f0ab0a50032cf56bc132e296187
+4d57009947e65101b6149061febc69b6aea9ae4e29791d6f77ca1a5f070d1540
+051254017800e6c03d1cfddddbb3c61f3f6746c199b71e3b63d45159e36eca53
+34706796c17f9d296b49799ca2e96d5dd99552eb268edd802b0355d4e4521abe
+79322a4d064579a169b37a151357660ec4c0c456a9a22ce3f519dc80afb89e6f
+715db6715cd70ff827e0f2f646f30179a9dda0a2ac69f7d05c12d621bda6d44f
+253ff25d0df5df4015c5d6c19b9ca9a9aa24a3f279d926544eaab4ae544b452e
+c5b7f4c73d4e5de91f88a28c4aaef407dd6044dee267f8457f0d317ffeabfc3f
+68a8002ac08602ff1fdd15dc6240f455850000000049454e44ae426082}}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs32\lang1033{\*\listtag0}\abinodiroverride\ltrch Conclusion}{\s29\f0\fs32\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs32\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch As pre usual, I've packaged up a copy of the entire article, along with a copy of the example program and source for your consumption. For the modifications required to the NAudio library, I have also copied in to the zip the modified version of WaveMixerStream32.cs for your convenience. Let me know if you have any questions, comments or if your keen to contribute to a project like OpenSebJ.}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Until next time, when we look at - well I have actually decided yet. There are two things which are on the list from Tutorial 3 however }{\s29\f0\fs24\lang1033{\*\listtag0}I don't think they are currently the items which are peaking my interest, so lets assume it will most likely be something from the list below:}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+{\listtext\pard\fi-431\li720\bullet 	}\pard\plain{\ltrpar\ql\fi-431\li720\s29{\*\abilist\abilistid1000\abilistparentid0\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Adding Audio Effects to a Stream}{\s29\f0\fs24\lang1033{\*\listtag0}\tab }{\s29\f0\fs24\lang1033{\*\listtag1001}\par}
+}{\listtext\pard\fi-431\li720\bullet 	}\pard\plain{\ltrpar\ql\fi-431\li720\s29{\*\abilist\abilistid1000\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Transposing the frequency of the stream being played back}{\s29\f0\fs24\lang1033{\*\listtag1003}\par}
+}{\listtext\pard\fi-431\li720\bullet 	}\pard\plain{\ltrpar\ql\fi-431\li720\s29{\*\abilist\abilistid1000\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Using MIDI to trigger audio samples}{\s29\f0\fs24\lang1033{\*\listtag1017}\par}
+}{\listtext\pard\fi-431\li720\bullet 	}\pard\plain{\ltrpar\ql\fi-431\li720\s29{\*\abilist\abilistid1000\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Playing compressed Audio (MP3 & OGG)}{\s29\f0\fs24\lang1033{\*\listtag1029}\par}
+}{\listtext\pard\fi-431\li720\bullet 	}\pard\plain{\ltrpar\ql\fi-431\li720\s29{\*\abilist\abilistid1000\abilistlevel1\abistartat0{\abifieldfont Symbol}{\abilistdecimal NULL}{\abilistdelim %L}{\abiliststyle Bullet List}}{\*\pn\pnql\pnstart0\pnlvlblt{\pntxtb\bullet}}\ls1\ilvl0\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch Or something else that takes my fancy, write to me and suggest what that may be.}{\s29\f0\fs24\lang1033{\*\listtag1030}\par}
+}\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\abinodiroverride\ltrch If you haven't already; }{\field{\*\fldinst {\f0\fs24\lang1033{\*\listtag0} HYPERLINK "http://www.evolvingsoftware.com/blogfiles/NAudioTutorial5.zip"}}{\*\fldrslt{\s29\f0\fs24\lang1033{\*\listtag0}Download the full article (AbiWord and RTF Format), example C#.Net Source Code and tutorial program here.}}}{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang3081{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}
+\pard\plain\ltrpar\ql\s29\sl240\slmult1\itap0{\s29\f0\fs24\lang1033{\*\listtag0}\par}}

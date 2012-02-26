@@ -16,3 +16,5 @@ D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Form1.resources
 D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.Properties.Resources.resources
 D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.exe
+F:\_GLDNBT\home_Speech\home_Speech\obj\x86\Debug\home_Speech.pdb
