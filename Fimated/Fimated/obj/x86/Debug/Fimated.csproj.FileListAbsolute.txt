@@ -16,3 +16,6 @@ F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.exe
 F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.pdb
 F:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.exe
 F:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.pdb
+F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Form1.resources
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.exe
+F:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.pdb

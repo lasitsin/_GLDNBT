@@ -37,3 +37,5 @@ F:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.Fi
 F:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\ProTextEditor.TextEditor.ProTextEditorForm.resources
 F:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.read.1.tlog
 F:\_GLDNBT\ProTextEditor\ProTextEditor\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\_GLDNBT\ProTextEditor\ProTextEditor\bin\Debug\CommandModule.exe
+F:\_GLDNBT\ProTextEditor\ProTextEditor\bin\Debug\CommandModule.pdb

@@ -1,0 +1,159 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.Designer.cs" caret="0" fromTop="0" />
+      <File id="7D6F443D-27A5-4C28-90AD-80D9914D2902/f:Program.cs" caret="477" fromTop="17" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:Program.cs" caret="349" fromTop="12" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/d:TextEditor/f:ProTextEditorForm.cs" caret="9190" fromTop="60" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3716" fromTop="20" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Program.cs" caret="444" fromTop="17" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1127" fromTop="22" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="1364" fromTop="24" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="611" fromTop="6" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="434" fromTop="14" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="338" fromTop="9" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/d:TextEditor/f:ProTextEditorForm.cs" caret="0" fromTop="0" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4098" fromTop="30" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1711" fromTop="12" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="1007" fromTop="23" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/d:TextEditor/f:ProTextEditorForm.cs" caret="10156" fromTop="28" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="736" fromTop="16" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="845" fromTop="31" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1686" fromTop="30" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="234" fromTop="9" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1503" fromTop="25" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:Program.cs" caret="349" fromTop="12" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="245" fromTop="9" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3923" fromTop="26" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3892" fromTop="21" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4329" fromTop="25" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="374" fromTop="7" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="1420" fromTop="37" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3669" fromTop="24" />
+      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1284" fromTop="27" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="CSharpCodeCompletionContext">
+      <Item value="_command" priority="319" />
+      <Item value="true" priority="95" />
+      <Item value="Delegate`0" priority="31" />
+      <Item value="ComandModule`0" priority="118" />
+      <Item value="public" priority="351" />
+      <Item value="base" priority="31" />
+      <Item value="object" priority="31" />
+      <Item value="Object`0" priority="31" />
+      <Item value="string" priority="181" />
+      <Item value="EventArgs`0" priority="95" />
+      <Item value="event" priority="63" />
+      <Item value="EventHandler`0" priority="65" />
+      <Item value="if" priority="255" />
+      <Item value="Save" priority="16" />
+      <Item value="saveFile" priority="63" />
+      <Item value="this" priority="191" />
+      <Item value="components" priority="31" />
+      <Item value="enterTxt" priority="63" />
+      <Item value="Form`0" priority="31" />
+      <Item value="parentForm" priority="31" />
+      <Item value="using" priority="92" />
+      <Item value="void" priority="159" />
+      <Item value="richTextBox1" priority="26" />
+      <Item value="txt" priority="63" />
+      <Item value="textBox1" priority="30" />
+      <Item value="_textEditor" priority="126" />
+      <Item value="private" priority="95" />
+      <Item value="as" priority="31" />
+      <Item value="MainWindow`0" priority="64" />
+      <Item value="saveToolStripMenuItem" priority="31" />
+      <Item value="saveToolStripMenuItem_Click`0" priority="26" />
+      <Item value="null" priority="31" />
+      <Item value="PCom" priority="31" />
+      <Item value="ProgramCommand`0" priority="26" />
+      <Item value="MCommand" priority="63" />
+      <Item value="MenuCommand`0" priority="95" />
+      <Item value="Text" priority="31" />
+      <Item value="_responseText" priority="95" />
+      <Item value="str" priority="31" />
+      <Item value="ParseResponse`0" priority="31" />
+      <Item value="CommandModule" priority="61" />
+      <Item value="static" priority="30" />
+      <Item value="class" priority="30" />
+      <Item value="bool" priority="31" />
+      <Item value="_com" priority="95" />
+      <Item value="EnterText`0" priority="31" />
+      <Item value="return" priority="95" />
+      <Item value="false" priority="31" />
+      <Item value="else" priority="31" />
+      <Item value="MessageBox`0" priority="31" />
+      <Item value="newToolStripMenuItem_Click`0" priority="31" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Fimated.ComandModule">
+      <Item value="IsOpenTextEditor" priority="26" />
+      <Item value="MCommand" priority="26" />
+      <Item value="Text" priority="53" />
+      <Item value="GetResponse`0" priority="26" />
+      <Item value="ClearAllCommands`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="IsNullOrEmpty`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProTextEditor.MainWindow">
+      <Item value="ActivateMdiChild`0" priority="26" />
+      <Item value="ActiveMdiChild" priority="22" />
+      <Item value="EnterText`0" priority="26" />
+      <Item value="SaveFile`0" priority="27" />
+      <Item value="RunCommand`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RichTextBox">
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProTextEditor.TextEditor.ProTextEditorForm">
+      <Item value="EnterText`0" priority="22" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.EventArgs">
+      <Item value="Empty" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Fimated.ProgramCommand">
+      <Item value="None" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Fimated.MenuCommand">
+      <Item value="None" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:CommandModule.ComandModule">
+      <Item value="Text" priority="53" />
+      <Item value="MCommand" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="26" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="53" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@CommandModule.MenuCommand">
+      <Item value="Create" priority="53" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

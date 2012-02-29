@@ -258,6 +258,11 @@ namespace ProTextEditor.TextEditor
             toolStripComboBox1.SelectedItem = richTextBox1.SelectionFont.FontFamily.Name;
             toolStripComboBox2.SelectedItem = richTextBox1.SelectionFont.Size.ToString();
         }
+        //for command module
+        public  void EnterText(string txt)
+        {
+            richTextBox1.Text += txt;
+        }
         
     }
 }

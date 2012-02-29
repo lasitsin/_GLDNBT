@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "exam_FManager", "..\exam_FM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "home_Speech", "..\home_Speech\home_Speech\home_Speech.csproj", "{7D6F443D-27A5-4C28-90AD-80D9914D2902}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandModule", "CommandModule\CommandModule.csproj", "{6ABC73C1-0264-4BAD-A541-E4091D61B71C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -31,6 +33,10 @@ Global
 		{7D6F443D-27A5-4C28-90AD-80D9914D2902}.Debug|x86.Build.0 = Debug|x86
 		{7D6F443D-27A5-4C28-90AD-80D9914D2902}.Release|x86.ActiveCfg = Release|x86
 		{7D6F443D-27A5-4C28-90AD-80D9914D2902}.Release|x86.Build.0 = Release|x86
+		{6ABC73C1-0264-4BAD-A541-E4091D61B71C}.Debug|x86.ActiveCfg = Debug|x86
+		{6ABC73C1-0264-4BAD-A541-E4091D61B71C}.Debug|x86.Build.0 = Debug|x86
+		{6ABC73C1-0264-4BAD-A541-E4091D61B71C}.Release|x86.ActiveCfg = Release|x86
+		{6ABC73C1-0264-4BAD-A541-E4091D61B71C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,38 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using ProTextEditor;
+using CommandModule;
 
 namespace Fimated
 {
     public partial class Form1 : Form
     {
-        private Form TextEditor = null;
-        private Form Fmanager = null;
-        private Comand_Module command = null;
+        private MainWindow _textEditor = null;
+        private Form _fmanager = null;
+        private ComandModule _command = null;
+
+        //list of events
+        public event EventHandler saveFile;
+        public event EventHandler enterTxt;
+        public event EventHandler closeMainProgramm;
+        
         public Form1()
         {
             InitializeComponent();
-            GetResponse("компьютер открыть текстовый редактор");
-            DoCommand();
+            _command = new ComandModule();
         }
 
         public void GetResponse(string str)
         {
-            command = new Comand_Module(str);
-            command.ParseResponse();
+            _command.GetResponse(str);
         }
 
         public void DoCommand()
         {
-            if (command != null)
+            if (_command != null)
             {
-                if (command.pCom == ProgramCommand.OpenTxt)
+                if (_command.PCom == ProgramCommand.OpenTxt)
                 {
-                    TextEditor = new MainWindow();
-                    TextEditor.Show();
+                    _textEditor = new MainWindow();
+                    _textEditor.Show();
+                    _command.IsOpenTextEditor = true;
                 }
-
+                else
+                {
+                    if(_textEditor!=null)
+                    if (!(_textEditor.RunCommand(_command)))
+                        MessageBox.Show("Команда не выполнена!!");
+                }
             }
+            if (_command != null) 
+                _command.ClearAllCommands();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GetResponse(textBox1.Text);
+            DoCommand();
+        }
+
     }
 }

@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="4BEF636C-9487-4FDD-B1EF-9141697FE63A" ModuleId="Fimated" />
+  <Module PersistentId="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B" ModuleId="ProTextEditor" />
+  <Module PersistentId="7D6F443D-27A5-4C28-90AD-80D9914D2902" ModuleId="home_Speech" />
+  <Module PersistentId="6ABC73C1-0264-4BAD-A541-E4091D61B71C" ModuleId="CommandModule" />
+</Modules>
