@@ -47,3 +47,8 @@ F:\_GLDNBT\bin\Debug\GoogleSpeechLib.pdb
 F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
 F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
 F:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb
+D:\_GLDNBT\bin\Debug\GoogleSpeechLib.dll
+D:\_GLDNBT\bin\Debug\GoogleSpeechLib.pdb
+D:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\ResolveAssemblyReference.cache
+D:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.dll
+D:\_GLDNBT\TestSoundRecord\TestSoundRecord\GoogleSpeechLib\obj\Debug\GoogleSpeechLib.pdb

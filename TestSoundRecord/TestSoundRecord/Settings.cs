@@ -9,6 +9,8 @@ namespace TestSoundRecord
     {
         public String wavName = @"my1.wav";
         public String tmpName = @"tmp.flac";
+        public String wavName2 = @"my2.wav";
+        public String tmpName2 = @"tmp2.flac";
 
 
         public String AppTitle
