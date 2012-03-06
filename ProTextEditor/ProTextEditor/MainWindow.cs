@@ -113,9 +113,24 @@ namespace ProTextEditor
 
         public bool RunCommand(ComandModule _com)
         {
+            if (_com.PCom == ProgramCommand.Exit)
+            {
+                this.Close();
+                return true;
+            }
             if(_com.MCommand==MenuCommand.Create)
             {
                 newToolStripMenuItem_Click(this,EventArgs.Empty);
+                return true;
+            }
+            else if (_com.MCommand == MenuCommand.EnterTxt)
+            {
+                _com.EnterText=true;
+                return true;
+            }
+            else if (_com.MCommand == MenuCommand.NotEnterTxt)
+            {
+                _com.EnterText=false;
                 return true;
             }
             else if (!string.IsNullOrEmpty(_com.Text))
