@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using CUETools.Codecs;
 using CUETools.Codecs.FLAKE;
 using GoogleSpeech;
+using ProTextEditor;
+using CommandModule;
 
 using NAudio.Wave;
 //using AudioInterface;
@@ -19,6 +21,11 @@ namespace TestSoundRecord
 {
     public partial class Form1 : Form
     {
+        //for command module
+        private MainWindow _textEditor = null;
+        private Form _fmanager = null;
+        private ComandModule _command = null;
+
         // WaveIn Streams for recording
         WaveIn waveInStream;
         WaveFileWriter writer;
@@ -28,13 +35,14 @@ namespace TestSoundRecord
 
         private bool rec1 = true;
         private bool rec2 = false;
-
+        
 
 
         public Form1()
         {
             InitializeComponent();
             txtPath.Text = Settings.Instance.wavName;
+            _command = new ComandModule();
         }
 
         private delegate void DoWorkDelegate(String filePath);
@@ -124,6 +132,7 @@ namespace TestSoundRecord
                 loggy.Text += "отправляем файл 2 в ГУГЛ" + System.Environment.NewLine;
                 SendFileRun(Settings.Instance.wavName2);
             }
+            
         }
 
 
@@ -239,6 +248,8 @@ namespace TestSoundRecord
                 return;
             }
             textOut.Text += " " + utterance;
+            GetResponse(utterance);
+            DoCommand();
         }
         private void AddToList(String item)
         {
@@ -305,6 +316,33 @@ namespace TestSoundRecord
             {
                 button2.PerformClick();
             }
+        }
+
+        //Parse sesponse and command
+        public void GetResponse(string str)
+        {
+            _command.GetResponse(str);
+        }
+
+        public void DoCommand()
+        {
+            if (_command != null)
+            {
+                if (_command.PCom == ProgramCommand.OpenTxt)
+                {
+                    _textEditor = new MainWindow();
+                    _textEditor.Show();
+                    _command.IsOpenTextEditor = true;
+                }
+                else
+                {
+                    if (_textEditor != null)
+                        if (!(_textEditor.RunCommand(_command)))
+                            MessageBox.Show("Команда не выполнена!!");
+                }
+            }
+            if (_command != null)
+                _command.ClearAllCommands();
         }
 
         

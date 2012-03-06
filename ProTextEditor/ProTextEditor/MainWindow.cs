@@ -118,10 +118,19 @@ namespace ProTextEditor
                 newToolStripMenuItem_Click(this,EventArgs.Empty);
                 return true;
             }
-            if (string.IsNullOrEmpty(_com.Text))
+            else if (!string.IsNullOrEmpty(_com.Text))
             {
                 EnterText(_com.Text);
                 return true;
+            }
+            else if (_com.MCommand==MenuCommand.Save)
+            {
+                saveToolStripMenuItem_Click(this,EventArgs.Empty);
+                return true;
+            }
+            else if (_com.MCommand == MenuCommand.PreView)
+            {
+                printPreviewToolStripMenuItem_Click(this,EventArgs.Empty);
             }
             return false;
         }

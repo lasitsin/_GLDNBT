@@ -17,11 +17,7 @@ namespace Fimated
         private Form _fmanager = null;
         private ComandModule _command = null;
 
-        //list of events
-        public event EventHandler saveFile;
-        public event EventHandler enterTxt;
-        public event EventHandler closeMainProgramm;
-        
+       
         public Form1()
         {
             InitializeComponent();
@@ -59,6 +55,10 @@ namespace Fimated
             GetResponse(textBox1.Text);
             DoCommand();
         }
-
+        public void Start(string str)
+        {
+            GetResponse(str);
+            DoCommand();
+        }
     }
 }

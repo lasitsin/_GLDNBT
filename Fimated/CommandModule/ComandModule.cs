@@ -7,6 +7,7 @@ namespace CommandModule
         private string _responseText;
         public bool IsOpenTextEditor = false;
         public bool IsOpenFileManager = false;
+        public bool EnterText = false;
         public ProgramCommand PCom = ProgramCommand.None;
         public MenuCommand MCommand = MenuCommand.None;
         public string Text;
@@ -45,12 +46,24 @@ namespace CommandModule
             {
                 if (_responseText.Contains("создать"))
                     MCommand = MenuCommand.Create;
+                else if (_responseText.Contains("сохранить"))
+                    MCommand = MenuCommand.Save;
+                else if (_responseText.Contains("сохранить") && _responseText.Contains("как"))
+                    MCommand = MenuCommand.SaveAs;
+                else if (_responseText.Contains("печать"))
+                    MCommand = MenuCommand.Print;
+                else if (_responseText.Contains("просмотр"))
+                    MCommand = MenuCommand.PreView;
+                else if (_responseText.Contains("включить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
+                    EnterText=true;
+                else if (_responseText.Contains("выключить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
+                    EnterText = false ;
             }
 
 
-            else
+            else 
             {
-                if (IsOpenTextEditor == true)
+                if (IsOpenTextEditor == true && EnterText==true)
                 {
                     Text = _responseText;
                 }
