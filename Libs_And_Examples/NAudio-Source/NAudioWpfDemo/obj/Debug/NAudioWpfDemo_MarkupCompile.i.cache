@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-F:\_GLDNBT\TestSoundRecord\NAudio-Source\NAudioWpfDemo\obj\Debug\
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudioWpfDemo\obj\Debug\
 NAudioWpfDemo
 none
 false
 DEBUG;TRACE
-F:\_GLDNBT\TestSoundRecord\NAudio-Source\NAudioWpfDemo\App.xaml
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudioWpfDemo\App.xaml
 8-1106716611
 524792757
 35-1733228903
-15-1636662253
+15-1347642856
 AudioPlaybackDemo\AudioPlaybackDemoView.xaml;DrumMachineDemo\DrumMachineDemoView.xaml;DrumMachineDemo\DrumPatternEditor.xaml;PolygonWaveFormControl.xaml;PolylineWaveFormControl.xaml;SpectrumAnalyser.xaml;WaveFormControl.xaml;MainWindow.xaml;
 
 True

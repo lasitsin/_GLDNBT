@@ -1,0 +1,31 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/f:WaveFormControl.xaml" caret="0" fromTop="0" />
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/f:SpectrumAnalyser.xaml" caret="0" fromTop="0" />
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/f:PolylineWaveFormControl.xaml" caret="0" fromTop="0" />
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/f:MainWindow.xaml" caret="0" fromTop="0" />
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/f:App.xaml" caret="0" fromTop="0" />
+      <File id="A7B74F85-D353-4ED4-A321-E6E4AD4D7D32/d:DrumMachineDemo/f:PatternSequencerTests.cs" caret="161" fromTop="7" />
+    </RecentFiles>
+    <RecentEdits />
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

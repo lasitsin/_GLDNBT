@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="NAudioTutorial5">
+</Property><Property Name="Solution File" Value="F:\_GLDNBT\Libs_And_Examples\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5.sln">
+</Property><Property Name="Date" Value="7 березня 2012 р.">
+</Property><Property Name="Time" Value="22:01">
+</Property></Properties><Event ErrorLevel="0" Project="NAudioTutorial5" Source="NAudioTutorial5\NAudioTutorial5.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="NAudioTutorial5" Source="NAudioTutorial5\NAudioTutorial5.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="NAudioTutorial5.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="NAudioTutorial5.sln" Description="Converted">
+</Event></UpgradeLog>

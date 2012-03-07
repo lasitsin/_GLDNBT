@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Threading;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -35,6 +36,7 @@ namespace TestSoundRecord
 
         private bool rec1 = true;
         private bool rec2 = false;
+        private bool isTalking = false;
         
 
 
@@ -59,7 +61,7 @@ namespace TestSoundRecord
 
 
                 numericUpDown1.Value = 0;
-                waveInStream = new WaveIn(8000, 2);
+                waveInStream = new WaveIn(8000, 1);
 
                 if (rec1)
                 {
@@ -76,9 +78,11 @@ namespace TestSoundRecord
 
                 loggy.Text += "создаем событие на DataAvailable" + System.Environment.NewLine;
                 waveInStream.DataAvailable += new EventHandler<WaveInEventArgs>(waveInStream_DataAvailable);
-                
-                loggy.Text += "стартуем запись" + System.Environment.NewLine;
+
+                loggy.Text += "стартуем запись" + System.Environment.NewLine; 
                 waveInStream.StartRecording();
+                
+                
 
 
                 // Just controling the objects on the screen.
@@ -223,6 +227,7 @@ namespace TestSoundRecord
             Invoke(new ContinueDelegate(ContinueRec));
             return;
         }
+            button1.PerformClick();
         if (checkBox1.Checked)
         {
             button1.PerformClick(); 
@@ -278,6 +283,7 @@ namespace TestSoundRecord
 
             byte[] buffer = e.Buffer;
             int bytesRecorded = e.BytesRecorded;
+            int signalLevel=10;
 
             loggy.Text += ".";
             numericUpDown1.Value++;
@@ -285,29 +291,53 @@ namespace TestSoundRecord
             textBox3.Text = bytesRecorded.ToString();
             textBox4.Text = buffer.GetUpperBound(0).ToString();
             textBox5.Text = buffer.GetLowerBound(0).ToString();
-            for (int i = 0; i < buffer.Length; i+=200)
+            //for (int i = 0; i < buffer.Length; i+=200)
+            //{
+            //    //textBox7.Text = buffer[i].ToString();
+            //    //progressBar1.Value = buffer[i]; 
+            //}
+            for (int index = 0; index<bytesRecorded; index+=2 )
             {
-                textBox7.Text = buffer[i].ToString();
-                progressBar1.Value = buffer[i]; 
+                short sample=  (short)((e.Buffer[index + 1] << 8) |  e.Buffer[index + 0]);
+                float sample32 = sample / 32768f;
+                signalLevel = Math.Abs(((int) (sample32*100)));
+                textBox7.Text =signalLevel.ToString();
+                progressBar1.Value =signalLevel;
+                if (signalLevel > 20)
+                    isTalking = true;
+               
             }
-
             //loggy.Text += "!!! пишем данные буфера в писатель" + System.Environment.NewLine;
-            if (rec1)
+            if (isTalking)
             {
-                writer.WriteData(e.Buffer, 0, e.BytesRecorded);
-                int secondsRecorded = (int)(writer.Length / writer.WaveFormat.AverageBytesPerSecond);
-                textBox6.Text = secondsRecorded.ToString();
-            }
-            else if(rec2)
-            {
-                writer2.WriteData(e.Buffer, 0, e.BytesRecorded);
-                int secondsRecorded = (int)(writer2.Length / writer2.WaveFormat.AverageBytesPerSecond);
-                textBox6.Text = secondsRecorded.ToString();
+                if (rec1)
+                {
+                    writer.WriteData(e.Buffer, 0, e.BytesRecorded);
+                    int secondsRecorded = (int)(writer.Length / writer.WaveFormat.AverageBytesPerSecond);
+                    textBox6.Text = secondsRecorded.ToString();
+                    if (signalLevel == 0 && (numericUpDown1.Value % numericUpDown2.Value) == 0)
+                    {
+                        isTalking = false;
+                        button2.PerformClick();
+                    }
+                }
+                else if (rec2)
+                {
+                    writer2.WriteData(e.Buffer, 0, e.BytesRecorded);
+                    int secondsRecorded = (int)(writer2.Length / writer2.WaveFormat.AverageBytesPerSecond);
+                    textBox6.Text = secondsRecorded.ToString();
+                    if (signalLevel == 0 && (numericUpDown1.Value % numericUpDown2.Value) == 0)
+                    {
+                        isTalking = false;
+                        button2.PerformClick();
+                    }
+                } 
             }
             if ((numericUpDown1.Value % numericUpDown2.Value) == 0 && checkBox1.Checked)
             {
                 button2.PerformClick();
             }
+            
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -343,6 +373,11 @@ namespace TestSoundRecord
             }
             if (_command != null)
                 _command.ClearAllCommands();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            button1.PerformClick();
         }
 
         

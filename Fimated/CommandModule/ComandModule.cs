@@ -61,7 +61,7 @@ namespace CommandModule
                     MCommand = MenuCommand.Print;
                 else if (_responseText.Contains("просмотр"))
                     MCommand = MenuCommand.PreView;
-                else if (_responseText.Contains("включить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
+                else if ( _responseText.Contains("набор") && _responseText.Contains("текста"))
                     MCommand = MenuCommand.EnterTxt;
                 
             }
