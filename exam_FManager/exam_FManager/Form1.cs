@@ -14,6 +14,8 @@ namespace exam_FManager
         public Form1()
         {
             InitializeComponent();
+            openToolStripMenuItem.PerformClick();
+            this.MdiChildren[0].WindowState = FormWindowState.Maximized;
         }
 
 

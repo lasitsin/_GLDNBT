@@ -94,8 +94,8 @@
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
-            this.fileToolStripMenuItem.Text = "&Файл";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.fileToolStripMenuItem.Text = "&Проводник";
             // 
             // openToolStripMenuItem
             // 
@@ -120,6 +120,7 @@
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.newToolStripMenuItem.Text = "&Новый";
+            this.newToolStripMenuItem.Visible = false;
             // 
             // toolStripSeparator1
             // 
@@ -147,6 +148,7 @@
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.editToolStripMenuItem.Text = "&Правка";
+            this.editToolStripMenuItem.Visible = false;
             // 
             // undoToolStripMenuItem
             // 
@@ -262,6 +264,7 @@
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.optionsToolStripMenuItem.Text = "&объединить меню";
+            this.optionsToolStripMenuItem.Visible = false;
             this.optionsToolStripMenuItem.Click += new System.EventHandler(this.optionsToolStripMenuItem_Click);
             // 
             // windowToolStripMenuItem
@@ -346,6 +349,7 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.helpToolStripMenuItem.Text = "&Справка";
+            this.helpToolStripMenuItem.Visible = false;
             // 
             // contentsToolStripMenuItem
             // 

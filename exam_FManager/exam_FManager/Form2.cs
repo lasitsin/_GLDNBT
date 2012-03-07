@@ -19,11 +19,23 @@ namespace exam_FManager
         public Form2()
         {
             InitializeComponent();
+            statusStrip1.Visible = false;
             FillDrives();
         }
 
+        protected void InitListView()
+        {
+            listView1.Clear();
+            listView1.Columns.Add("Имя", 150, HorizontalAlignment.Left);        //0
+            listView1.Columns.Add("Размер", 75, HorizontalAlignment.Right);     //1
+            listView1.Columns.Add("Тип", 150, HorizontalAlignment.Center);      //2
+            listView1.Columns.Add("Создан", 140, HorizontalAlignment.Left);     //3 2
+            listView1.Columns.Add("Изменен", 140, HorizontalAlignment.Left);    //4 3
+            listView1.Columns.Add("Путь", 200, HorizontalAlignment.Left);       //5 4
+            //listView1.Columns.Add("Аттрибут", 75, HorizontalAlignment.Right);   //6
+        }
 
-        private void FillDrives()
+        private void FillDrives()   
         {
             const int removable = 2;
             const int localDisk = 3;
@@ -75,9 +87,25 @@ namespace exam_FManager
                 nodeCollection.Add(nodeTreeNode);
             }
 
+            treeView1.ExpandAll();
             InitListView();
             Cursor = Cursors.Default;
         }
+
+        protected static ManagementObjectCollection getDrives()
+        {
+            //get drive collection
+            ManagementObjectCollection queryCollection;
+            using (var query = new ManagementObjectSearcher("SELECT * From Win32_LogicalDisk "))
+            {
+                queryCollection = query.Get();
+            }
+            return queryCollection;
+        }
+
+
+
+
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
@@ -114,11 +142,17 @@ namespace exam_FManager
                         FillFiles(nodeCurrent.FullPath);
 
                         string[] stringDirectories = Directory.GetDirectories(getFullPath(nodeCurrent.FullPath));
-
                         foreach (string stringDir in stringDirectories)
                         {
                             string stringFullPath = stringDir;
                             string stringPathName = GetPathName(stringFullPath);
+
+                            var objDir = new DirectoryInfo(stringFullPath);
+                            if ((((objDir.Attributes) & FileAttributes.Hidden) == FileAttributes.Hidden)||(((objDir.Attributes) & FileAttributes.System) == FileAttributes.System))
+                            {
+                                continue;
+                            }
+
 
                             //create node for directories
                             var nodeDir = new TreeNode(stringPathName, imageIndex, selectIndex);
@@ -143,7 +177,7 @@ namespace exam_FManager
 
         private void FillFiles(string path)
         {
-            var lvData = new string[6];
+            var lvData = new string[listView1.Columns.Count];
             InitListView();
 
                 if (Directory.Exists(getFullPath(path)) == false)
@@ -160,11 +194,17 @@ namespace exam_FManager
                         foreach (string stringDir in stringDirectories)
                         {
                             string stringDirName = GetPathName(stringDir);
-                            var objDir = new DirectoryInfo(stringDirName);
+                            var objDir = new DirectoryInfo(stringDir);
+                            if ((((objDir.Attributes) & FileAttributes.Hidden) == FileAttributes.Hidden) || (((objDir.Attributes) & FileAttributes.System) == FileAttributes.System))
+                            {
+                                continue;
+                            }
                             dirCreateDate = objDir.CreationTime; 
                             dirModifyDate = objDir.LastWriteTime;
                             lvData[0] = stringDirName;
                             lvData[2] = objDir.Extension;
+                            //FileAttributes fa = File.GetAttributes(stringDir);
+                            //lvData[6] = fa.ToString();
 
                             if (TimeZone.CurrentTimeZone.IsDaylightSavingTime(dirCreateDate) == false)
                             {
@@ -204,6 +244,10 @@ namespace exam_FManager
                         {
                             string stringFileName = stringFile;
                             var objFileSize = new FileInfo(stringFileName);
+                            if ((((objFileSize.Attributes) & FileAttributes.Hidden) == FileAttributes.Hidden) || (((objFileSize.Attributes) & FileAttributes.System) == FileAttributes.System))
+                            {
+                                continue;
+                            }
                             Int64 lFileSize = objFileSize.Length;
                             dtCreateDate = objFileSize.CreationTime; //GetCreationTime(stringFileName);
                             dtModifyDate = objFileSize.LastWriteTime; //GetLastWriteTime(stringFileName);
@@ -239,10 +283,11 @@ namespace exam_FManager
                             lvData[5] = stringFileName;
 
                             //Create actual list item
-                            Icon ic = Icon.ExtractAssociatedIcon(objFileSize.FullName);
-                            imageList2.Images.Add(ic);
+                            Icon ic = Icon.ExtractAssociatedIcon(stringFileName);
+                            imageList1.Images.Add(ic);
                             imageList3.Images.Add(ic);
-                            var lvItem = new ListViewItem(lvData,4);
+                            //var lvItem = new ListViewItem(lvData,4);
+                            var lvItem = new ListViewItem(lvData, imageList3.Images.Count-1);
                             listView1.Items.Add(lvItem);
                         }
                     }
@@ -259,34 +304,14 @@ namespace exam_FManager
                         MessageBox.Show("Error: " + e);
                     }
                 }
-                //listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
+                listView1.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
         }
 
-        protected void InitListView()
-        {
-            listView1.Clear();
-            listView1.Columns.Add("Имя", 150, HorizontalAlignment.Left);        //0
-            listView1.Columns.Add("Размер", 75, HorizontalAlignment.Right);     //1
-            listView1.Columns.Add("Тип", 150, HorizontalAlignment.Center);      //2
-            listView1.Columns.Add("Создан", 140, HorizontalAlignment.Left);     //3 2
-            listView1.Columns.Add("Изменен", 140, HorizontalAlignment.Left);    //4 3
-            listView1.Columns.Add("Путь", 200, HorizontalAlignment.Left);       //5 4
-        }
 
 
 
 
         
-        protected static ManagementObjectCollection getDrives()
-        {
-            //get drive collection
-            ManagementObjectCollection queryCollection;
-            using (var query = new ManagementObjectSearcher("SELECT * From Win32_LogicalDisk "))
-            {
-                queryCollection = query.Get();
-            }
-            return queryCollection;
-        }
 
         protected static string getFullPath(string stringPath)
         {
@@ -403,14 +428,7 @@ namespace exam_FManager
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            if (statusStrip1.Visible)
-            {
-                statusStrip1.Visible = false;
-            }
-            else
-            {
-                statusStrip1.Visible = true;
-            }
+            statusStrip1.Visible = !statusStrip1.Visible;
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -419,12 +437,13 @@ namespace exam_FManager
             {
                 if (Directory.Exists(Directory.GetParent(this.listView1.TopItem.SubItems[5].Text).FullName))
                 {
+                    //treeView1.SelectedNode = treeView1.Nodes.Find(this.listView1.TopItem.Text,true);
                     FillFiles(Directory.GetParent(Directory.GetParent(this.listView1.TopItem.SubItems[5].Text).FullName).FullName);
                 }
             }
             catch (Exception er)
             {
-                //MessageBox.Show("Error: " + er);
+                MessageBox.Show("Error: " + er);
             }
         }
 
@@ -584,6 +603,8 @@ namespace exam_FManager
         {
             //this.listBox1.Items.Add(e.Data.GetData(DataFormats.StringFormat.ToString()));
         }
+
+
 
         private void Collapse_Click(object sender, EventArgs e)
         {
