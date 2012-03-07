@@ -7,3 +7,12 @@ C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAud
 C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.dll
 C:\Users\AlexBond\Desktop\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.pdb
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.dll.config
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.dll
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.WindowsMediaFormat.pdb
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.dll
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.pdb
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\bin\Debug\NAudio.xml
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\ResolveAssemblyReference.cache
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.dll
+F:\_GLDNBT\Libs_And_Examples\NAudio-Source\NAudio.WindowsMediaFormat\obj\Debug\NAudio.WindowsMediaFormat.pdb

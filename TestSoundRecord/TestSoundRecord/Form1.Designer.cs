@@ -168,7 +168,6 @@
             // progressBar1
             // 
             this.progressBar1.Location = new System.Drawing.Point(437, 212);
-            this.progressBar1.Maximum = 255;
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(149, 23);
             this.progressBar1.TabIndex = 10;
@@ -254,6 +253,7 @@
             this.Controls.Add(this.txtPath);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

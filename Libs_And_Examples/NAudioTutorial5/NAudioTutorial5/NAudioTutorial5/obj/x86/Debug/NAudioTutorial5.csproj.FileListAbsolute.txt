@@ -22,3 +22,5 @@ D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudi
 D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudioTutorial5.csproj.GenerateResource.Cache
 D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudioTutorial5.exe
 D:\Tutorials\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudioTutorial5.pdb
+F:\_GLDNBT\Libs_And_Examples\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudioTutorial5.exe
+F:\_GLDNBT\Libs_And_Examples\NAudioTutorial5\NAudioTutorial5\NAudioTutorial5\obj\x86\Debug\NAudioTutorial5.pdb
