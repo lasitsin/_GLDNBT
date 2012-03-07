@@ -33,3 +33,8 @@ c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Codecs.p
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\ResolveAssemblyReference.cache
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\CUETools.Codecs.dll
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\CUETools.Codecs.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Codecs.dll
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Codecs.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\CUETools.Codecs.dll
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs\obj\Debug\CUETools.Codecs.pdb

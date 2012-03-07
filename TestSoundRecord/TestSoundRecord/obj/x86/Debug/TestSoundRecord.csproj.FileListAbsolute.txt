@@ -136,3 +136,9 @@ c:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Form1.r
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\TestSoundRecord.Properties.Resources.resources
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.read.1.tlog
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CommandModule.exe
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\ProTextEditor.exe
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\CommandModule.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\ProTextEditor.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\exam_FManager.exe
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\bin\Debug\exam_FManager.pdb

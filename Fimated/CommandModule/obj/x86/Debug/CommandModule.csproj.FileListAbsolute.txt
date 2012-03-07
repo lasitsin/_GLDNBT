@@ -8,3 +8,8 @@ c:\_GLDNBT\Fimated\CommandModule\bin\Debug\CommandModule.pdb
 c:\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\ResolveAssemblyReference.cache
 c:\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\CommandModule.exe
 c:\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\CommandModule.pdb
+D:\temp\tmp_backup\_GLDNBT\Fimated\CommandModule\bin\Debug\CommandModule.exe
+D:\temp\tmp_backup\_GLDNBT\Fimated\CommandModule\bin\Debug\CommandModule.pdb
+D:\temp\tmp_backup\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\temp\tmp_backup\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\CommandModule.exe
+D:\temp\tmp_backup\_GLDNBT\Fimated\CommandModule\obj\x86\Debug\CommandModule.pdb

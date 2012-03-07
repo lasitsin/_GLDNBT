@@ -81,6 +81,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\exam_FManager\exam_FManager\exam_FManager.csproj">
+      <Project>{03720CF0-8609-4045-B142-D740391C9773}</Project>
+      <Name>exam_FManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Fimated\CommandModule\CommandModule.csproj">
       <Project>{6ABC73C1-0264-4BAD-A541-E4091D61B71C}</Project>
       <Name>CommandModule</Name>

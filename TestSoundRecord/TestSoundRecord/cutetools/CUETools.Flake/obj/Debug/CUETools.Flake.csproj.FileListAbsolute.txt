@@ -46,3 +46,9 @@ c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.pd
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.exe
 c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe.config
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.exe
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\CUETools.Flake.pdb
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.exe
+D:\temp\tmp_backup\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Flake\obj\Debug\CUETools.Flake.pdb

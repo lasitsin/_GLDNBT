@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using CommandModule;
 
 namespace exam_FManager
 {
@@ -103,7 +104,22 @@ namespace exam_FManager
         private void undoToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-        } 
+        }
+
+
+
+
+
+        public bool RunCommand(ComandModule _com)
+        {
+            if (_com.PCom == ProgramCommand.ExitFm)
+            {
+                this.Close();
+                return true;
+            }
+            return false;
+        }
+
 
     }
 }

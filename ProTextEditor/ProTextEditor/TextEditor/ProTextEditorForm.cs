@@ -261,6 +261,10 @@ namespace ProTextEditor.TextEditor
         //for command module
         public  void EnterText(string txt)
         {
+            if (richTextBox1.Text != "")
+            {
+                richTextBox1.Text += " ";
+            }
             richTextBox1.Text += txt;
         }
         

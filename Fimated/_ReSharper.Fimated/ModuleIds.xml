@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="217DEAD9-07BD-4210-92E1-15AC2338F06F" ModuleId="TestSoundRecord" />
+  <Module PersistentId="8344AF78-46B6-4BED-AFF9-E573E257AB01" ModuleId="GoogleSpeechLib" />
+  <Module PersistentId="6ABC73C1-0264-4BAD-A541-E4091D61B71C" ModuleId="CommandModule" />
+  <Module PersistentId="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B" ModuleId="ProTextEditor" />
+  <Module PersistentId="03720CF0-8609-4045-B142-D740391C9773" ModuleId="exam_FManager" />
+</Modules>

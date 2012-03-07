@@ -13,6 +13,7 @@ using CUETools.Codecs.FLAKE;
 using GoogleSpeech;
 using ProTextEditor;
 using CommandModule;
+using exam_FManager;
 
 using NAudio.Wave;
 //using AudioInterface;
@@ -23,7 +24,7 @@ namespace TestSoundRecord
     {
         //for command module
         private MainWindow _textEditor = null;
-        private Form _fmanager = null;
+        private exam_FManager.Form1 _fmanager = null;
         private ComandModule _command = null;
 
         // WaveIn Streams for recording
@@ -334,12 +335,26 @@ namespace TestSoundRecord
                     _textEditor.Show();
                     _command.IsOpenTextEditor = true;
                 }
-                else
+                else if (_command.PCom == ProgramCommand.OpenFm)
                 {
-                    if (_textEditor != null)
-                        if (!(_textEditor.RunCommand(_command)))
-                            MessageBox.Show("Команда не выполнена!!");
+                    _fmanager = new exam_FManager.Form1();
+                    _fmanager.Show();
+                    _command.IsOpenFileManager = true;
                 }
+                else if (_textEditor != null)
+                {
+                    if (!(_textEditor.RunCommand(_command)))
+                        MessageBox.Show("Команда не выполнена!!");
+                }
+                else if (_fmanager != null)
+                {
+                    if (!(_fmanager.RunCommand(_command)))
+                    {
+                        MessageBox.Show("Команда не выполнена!!");
+                    }
+
+                }
+
             }
             if (_command != null)
                 _command.ClearAllCommands();

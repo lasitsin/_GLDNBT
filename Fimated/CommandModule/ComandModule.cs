@@ -42,6 +42,14 @@ namespace CommandModule
                 {
                     PCom = ProgramCommand.Change;
                 }
+                if (_responseText.Contains("открыть") && _responseText.Contains("файловый") && _responseText.Contains("менеджер"))
+                {
+                    PCom = ProgramCommand.OpenFm;
+                }
+                if (_responseText.Contains("закрыть") && _responseText.Contains("файловый") && _responseText.Contains("менеджер"))
+                {
+                    PCom = ProgramCommand.ExitFm;
+                }
             }
             else 
             {

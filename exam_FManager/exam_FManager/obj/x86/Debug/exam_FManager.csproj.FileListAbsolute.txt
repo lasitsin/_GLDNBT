@@ -48,3 +48,5 @@ c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.read.1.tlo
 c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.write.1.tlog
 c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.exe
 c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.pdb
+D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\bin\Debug\CommandModule.exe
+D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\bin\Debug\CommandModule.pdb
