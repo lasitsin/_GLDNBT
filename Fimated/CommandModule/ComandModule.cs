@@ -8,6 +8,7 @@ namespace CommandModule
         public bool IsOpenTextEditor = false;
         public bool IsOpenFileManager = false;
         public bool EnterText = false;
+        public bool Redact = false;
         public ProgramCommand PCom = ProgramCommand.None;
         public MenuCommand MCommand = MenuCommand.None;
         public string Text;
@@ -42,9 +43,15 @@ namespace CommandModule
                     PCom = ProgramCommand.Change;
                 }
             }
-            else if(_responseText.Contains("команда"))
+            else 
             {
-                if (_responseText.Contains("создать"))
+                if (_responseText.Contains("выключить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
+                    MCommand = MenuCommand.NotEnterTxt;
+                else if (IsOpenTextEditor == true && EnterText==true)
+                {
+                    Text = _responseText;
+                }
+                else if (_responseText.Contains("создать"))
                     MCommand = MenuCommand.Create;
                 else if (_responseText.Contains("сохранить"))
                     MCommand = MenuCommand.Save;
@@ -56,18 +63,9 @@ namespace CommandModule
                     MCommand = MenuCommand.PreView;
                 else if (_responseText.Contains("включить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
                     MCommand = MenuCommand.EnterTxt;
-                else if (_responseText.Contains("выключить") && _responseText.Contains("набор") && _responseText.Contains("текста"))
-                    MCommand = MenuCommand.NotEnterTxt;
+                
             }
 
-
-            else 
-            {
-                if (IsOpenTextEditor == true && EnterText==true)
-                {
-                    Text = _responseText;
-                }
-            }
         }
         public void ClearAllCommands()
         {

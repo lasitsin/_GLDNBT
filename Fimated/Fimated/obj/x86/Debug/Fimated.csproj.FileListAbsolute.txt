@@ -19,3 +19,16 @@ F:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.pdb
 F:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Form1.resources
 F:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.exe
 F:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.pdb
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.exe
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\Fimated.pdb
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.exe
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.exe
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\ProTextEditor.pdb
+c:\_GLDNBT\Fimated\Fimated\bin\Debug\CommandModule.pdb
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Form1.resources
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.Properties.Resources.resources
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.exe
+c:\_GLDNBT\Fimated\Fimated\obj\x86\Debug\Fimated.pdb

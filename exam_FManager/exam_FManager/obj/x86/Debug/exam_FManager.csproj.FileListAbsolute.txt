@@ -38,3 +38,13 @@ D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManag
 D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.Properties.Resources.resources
 D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.read.1.tlog
 D:\temp\tmp_backup\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\_GLDNBT\exam_FManager\exam_FManager\bin\Debug\exam_FManager.exe
+c:\_GLDNBT\exam_FManager\exam_FManager\bin\Debug\exam_FManager.pdb
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.Form1.resources
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.Form2.resources
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.Properties.Resources.resources
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.exe
+c:\_GLDNBT\exam_FManager\exam_FManager\obj\x86\Debug\exam_FManager.pdb

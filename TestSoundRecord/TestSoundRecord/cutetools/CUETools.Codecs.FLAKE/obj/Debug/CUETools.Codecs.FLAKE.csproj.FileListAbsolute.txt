@@ -77,3 +77,16 @@ D:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\D
 D:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
 D:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
 D:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.dll
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\CUETools.Codecs.FLAKE.pdb
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\bin\Debug\plugins\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResolveAssemblyReference.cache
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.resources
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.Properties.Resources.ru-RU.resources
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\GenerateResource-ResGen.read.1.tlog
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResGen.read.1.tlog
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\GenerateResource-ResGen.write.1.tlog
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ResGen.write.1.tlog
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\ru-RU\CUETools.Codecs.FLAKE.resources.dll
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.dll
+c:\_GLDNBT\TestSoundRecord\TestSoundRecord\cutetools\CUETools.Codecs.FLAKE\obj\Debug\CUETools.Codecs.FLAKE.pdb

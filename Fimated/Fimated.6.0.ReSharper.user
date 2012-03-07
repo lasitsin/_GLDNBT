@@ -5,15 +5,13 @@
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.Designer.cs" caret="490" fromTop="14" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Program.cs" caret="444" fromTop="17" />
       <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:Program.cs" caret="213" fromTop="6" />
-      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="2324" fromTop="39" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/d:TextEditor/f:ProTextEditorForm.cs" caret="10067" fromTop="17" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="11475" fromTop="19" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1371" fromTop="32" />
-      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3665" fromTop="16" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="1506" fromTop="48" />
+      <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="277" fromTop="0" />
     </RecentFiles>
     <RecentEdits>
-      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="565" fromTop="16" />
-      <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="674" fromTop="31" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="234" fromTop="9" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1332" fromTop="25" />
       <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:Program.cs" caret="388" fromTop="12" />
@@ -21,8 +19,6 @@
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4742" fromTop="26" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="5148" fromTop="25" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1113" fromTop="27" />
-      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="267" fromTop="9" />
-      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="2443" fromTop="28" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="922" fromTop="15" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="450" fromTop="10" />
       <File id="4BEF636C-9487-4FDD-B1EF-9141697FE63A/f:Form1.cs" caret="1550" fromTop="36" />
@@ -31,17 +27,21 @@
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="1096" fromTop="32" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="11025" fromTop="30" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="11826" fromTop="42" />
-      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="880" fromTop="25" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="917" fromTop="25" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="4570" fromTop="19" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="8683" fromTop="18" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4667" fromTop="35" />
       <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:Program.cs" caret="213" fromTop="6" />
-      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="2324" fromTop="33" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4180" fromTop="26" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3918" fromTop="17" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="4134" fromTop="24" />
       <File id="217DEAD9-07BD-4210-92E1-15AC2338F06F/f:Form1.cs" caret="11475" fromTop="19" />
       <File id="0E5D47BD-7FD0-4FD2-BE2A-6CFCD494194B/f:MainWindow.cs" caret="3665" fromTop="16" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="295" fromTop="10" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="2512" fromTop="39" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="1713" fromTop="24" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="1370" fromTop="20" />
+      <File id="6ABC73C1-0264-4BAD-A541-E4091D61B71C/f:ComandModule.cs" caret="2512" fromTop="40" />
     </RecentEdits>
   </RecentFiles>
   <CompletionStatisticsManager>
